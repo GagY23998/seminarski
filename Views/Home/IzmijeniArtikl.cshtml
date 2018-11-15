@@ -1,0 +1,25 @@
+﻿@model IEnumerable<Artikl>
+@inject Artikl artikl
+@inject CRUD.Services.IArtikliService Service
+<div>
+    <form method="post" enctype="multipart/form-data">
+        <select name="ArtiklID" asp-items="@(new SelectList(Model,"ArtiklID","ImeArtikla",""))"></select>
+        
+        <div>
+            <label>ImeArtikla</label>
+        <input type="text" name="ImeArtikla" /></div>
+        <div>
+            <label>Stanje Artikla</label><input type="text" name="Stanje" />
+        </div>
+        <div>
+            <label>Cijena Artikla</label><input type="text" name="Cijena" />
+        </div>
+        <div>
+            <label>Ime Kategorije</label><input type="text" name="ImeKategorije" />
+        </div>
+        <div>
+            <label>Slika Artikla</label><input type="file" name="SlikaArtikla" />
+        </div>
+        <button type="submit">Potvrdi izmjenu</button>
+    </form>
+</div>

@@ -1,0 +1,8 @@
+﻿@model IEnumerable<Artikl>
+@inject Artikl artikl
+<div>
+    <form method="post">
+        <select asp-for="@artikl" asp-items="@(new SelectList(Model, "ArtiklID", "ImeArtikla"))" name="ArtiklID"></select>
+        <button type="submit">Potvrdi</button>
+    </form>
+</div>  

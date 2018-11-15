@@ -1,0 +1,26 @@
+﻿@model CRUD.ViewModels.ArtiklOneViewModel
+<div>
+    <form action="" method="post" enctype="multipart/form-data">
+        <div>
+            <label asp-for="ImeArtikla">Ime Artikla:</label>
+            <input type="text" name="ImeArtikla" value="" />
+        </div>
+        <div>
+            <label asp-for="Stanje">Stanje:</label>
+            <input type="text" name="Stanje" value="" />
+        </div>
+        <div>
+            <label asp-for="CijenaArtikla">Cijena:</label>
+            <input type="text" name="CijenaArtikla" value="" />
+        </div>
+        <div>
+            <label asp-for="ImeKategorije">Ime Kategorije:</label>
+            <input type="text" name="ImeKategorije" value="" />
+        </div>
+        <div>
+            <label asp-for="SlikaArtikla">Slika artikla:</label>
+            <input type="file" name="SlikaArtikla" />
+        </div>
+        <button type="submit">Potvrdi</button>
+    </form>
+</div>
