@@ -1,0 +1,14 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Archivo');
+@font-face {
+    font-family: "MyFont";
+    src: url('https://fonts.googleapis.com/css?family=Archivo') format('truetype')
+}
+.Artikal{
+    color:White;
+    background-color:crimson;
+    border:1px solid rgba(61, 5, 83, 0.78);
+    text-align:center;
+}
+.Artikal p{
+    font-family: MyFont;
+}
