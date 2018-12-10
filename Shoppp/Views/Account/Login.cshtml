@@ -1,0 +1,18 @@
+﻿@model LoginViewModel
+@{ Layout = "_Layout";}
+
+<div class="login-box">
+    <form method="post">
+        <div class="form-group">
+            <label asp-for="UserName">UserName</label>
+            <input class="form-control-sm" type="text"
+                   name="UserName"/>
+        </div>
+        <div class="form-group">
+            <label asp-for="Password">Password</label>
+            <input class="form-control-sm" type="password"
+                   name="Password"/>
+        </div>
+        <button type="submit" class="btn btn-primary">Potvrdi</button>
+    </form>
+</div>

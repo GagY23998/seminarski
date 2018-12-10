@@ -1,0 +1,26 @@
+﻿@model List<Artikl>
+@{ Layout = "~/Views/Shared/_Layout.cshtml";}
+<div class="KolicinaAzuriraj">
+        <form method="post">
+    <table>
+        <tr>
+            <th>Ime Artikla</th>
+            <th>Cijena Artikla</th>
+            <th>Kolicina Artikla</th>
+        </tr>
+            @for(int i = 0;i< Model.Count;i++)
+            {
+                <tr>
+                    <td><input type="text" asp-for="@Model[i].ImeArtikla" value="@Model[i].ImeArtikla"/></td>
+                    <td><input type="number" asp-for="@Model[i].CijenaArtikla" value="@Model[i].CijenaArtikla"/></td>
+                    <td><input type="number" asp-for="@Model[i].Kolicina" value="@Model[i].Kolicina" /></td>
+                </tr>
+                    <input type="hidden" asp-for="@Model[i].SlikaArtikla"/>
+                    <input type="hidden" asp-for="@Model[i].KategorijaID"/>
+                    <input type="hidden" asp-for="@Model[i].ArtiklID"/>
+            }
+    </table>
+            <button type="submit">Azuriraj</button>
+        </form>
+
+</div>

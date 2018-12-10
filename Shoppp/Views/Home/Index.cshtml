@@ -1,0 +1,12 @@
+﻿@model OnlineShopping.ViewModels.ArtiklViewModel
+
+<div>
+
+    @foreach (var item in Model)
+    {
+        <partial name="ArtiklPartial" model="@item" />
+    }
+
+</div>
+
+ 
