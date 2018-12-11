@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity;
-using OnlineShopping.HelperUser;
+using Shoppp.HelperUser;
 
-namespace OnlineShopping.Models
+namespace Shoppp.Models
 {
     public class ArticleBuyingHistory
     {
@@ -16,5 +16,6 @@ namespace OnlineShopping.Models
         public Artikl Artikl { get; set; }
         public DateTime PurchaseDate { get; set; }
         public int Amount { get; set; }
+        public int Quantity { get; set; }
     }
 }
