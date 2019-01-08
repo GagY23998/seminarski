@@ -12534,11 +12534,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Asus-i5\\source\\repos\\Shoppp\\Shoppp\\OnlineShopping.csproj",
+      "projectUniqueName": "C:\\Users\\Asus-i5\\source\\repos\\RSI_Seminarski\\OnlineShop\\Shoppp\\OnlineShopping.csproj",
       "projectName": "OnlineShopping",
-      "projectPath": "C:\\Users\\Asus-i5\\source\\repos\\Shoppp\\Shoppp\\OnlineShopping.csproj",
+      "projectPath": "C:\\Users\\Asus-i5\\source\\repos\\RSI_Seminarski\\OnlineShop\\Shoppp\\OnlineShopping.csproj",
       "packagesPath": "C:\\Users\\Asus-i5\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Asus-i5\\source\\repos\\Shoppp\\Shoppp\\obj\\",
+      "outputPath": "C:\\Users\\Asus-i5\\source\\repos\\RSI_Seminarski\\OnlineShop\\Shoppp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

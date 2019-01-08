@@ -1,10 +1,11 @@
-﻿using System;
+﻿using OnlineShopping.HelperUser;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Shoppp.Models
+namespace OnlineShopping.Models
 {
     public class AdvertisementType
     {

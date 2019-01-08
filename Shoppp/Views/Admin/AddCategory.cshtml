@@ -1,0 +1,35 @@
+﻿@model OnlineShopping.ViewModels.KategorijaViewModel
+<div>
+    <a asp-action="Index">Home</a>
+    <form method="post">
+
+        <div>
+            <label asp-for="ImeKategorije"></label>
+            <span asp-validation-for="@Model.ImeKategorije"></span>
+            <input type="text" name="ImeKategorije" />
+        </div>
+        <div class="prioriteti">
+
+        </div>
+        <div>
+            <button type="button" id="oznaka">Dodaj Oznaku</button>
+        </div>
+        <div>
+            <input type="submit" value="Potvrdi" />
+        </div>
+    </form>
+</div>
+<script>
+    $(function(){
+        let cnt = 0;        
+        $("#oznaka").click(function(){
+            $(".prioriteti").append(`
+                    <div>
+                        <label>Oznaka${cnt + 1}</label>
+                        <input type="text" name="charachteristics[${cnt}].CharName" placeholder="Dodaj novu oznaku"/>
+                        <label>Prioritet</label>
+                        <input type="number" name="charachteristics[${cnt++}].Priority placeholder="Dodaj priortet" />
+                    </div>`);
+        });
+    });
+</script>

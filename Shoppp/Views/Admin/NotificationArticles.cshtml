@@ -1,0 +1,21 @@
+﻿@model List<ArtiklOneViewModel>
+@inject IArtikliService service
+<table>
+    <tbody>
+
+    <tr class="row">
+        <th>Ime artikla</th>
+        <th>Stanje artikla</th>
+        <th>Cijena artikla</th>
+    </tr>
+@foreach (var item in Model)
+{
+    <tr class="row">
+        <td><input class="form-control" value="@item.ImeArtikla" /></td>
+        <td><input class="form-control" value="@item.NaStanju" /></td>
+        <td><input class="form-control" value="@item.CijenaArtikla KM"/></td>
+        <td><a asp-action="ChangeArticle" class="form-control" asp-route-id="@service.GetArticleIDbyName(item.ImeArtikla)">Izmjeniti artikl</a></td>
+    </tr>
+}
+    </tbody>
+</table>

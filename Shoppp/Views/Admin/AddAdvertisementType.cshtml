@@ -1,0 +1,26 @@
+﻿@model AdvertisementTypeViewModel
+@inject IArtikliService service
+@{ Layout = "~/Views/Shared/_Layout.cshtml"; }
+
+
+<div>
+    <a asp-action="Index">Home</a>
+    <table>
+        <tr><th>Tipovi oglasa</th><th>Opcije</th></tr>
+        
+        @foreach (var item in service.GetAdvertisementTypeModels())
+        {
+            <tr><td>@item.AdvertisementType</td> <td><a asp-action="DeleteAdvertisementType" asp-route-name="@item.AdvertisementType">Obrisi</a></td></tr>
+        }
+
+    </table>
+</div>
+<form method="post">
+
+<div class="form-group">
+    <label> Tip oglasa:</label>
+    <input type="text" asp-for="@Model.AdvertisementType" />
+    <span asp-validation-for="@Model.AdvertisementType"></span>
+    <button class="btn btn-primary">Potvrdi</button>
+</div>
+</form>

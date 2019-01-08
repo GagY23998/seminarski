@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
 
-namespace Shoppp.Models
+namespace OnlineShopping.Models
 {
     public class Cart
     {
@@ -13,6 +13,5 @@ namespace Shoppp.Models
         public DateTime CreationDate { get; set; }
         public string CartName { get; set; }
         public List<Artikl> Artikli { get; set; }
-
     }
 }

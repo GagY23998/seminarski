@@ -9,7 +9,8 @@ namespace OnlineShopping.ViewModels
 {
     public class ArtiklViewModel :IEnumerable
     {
-       public  IEnumerable<Artikl> Articles { get; set; }
+       public IEnumerable<Artikl> Articles { get; set; }
+       public List<ArtiklOneViewModel> ArticlesExpire { get; set; }
         public IEnumerator GetEnumerator()
         {
             return Articles.GetEnumerator();

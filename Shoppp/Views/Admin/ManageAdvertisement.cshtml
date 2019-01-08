@@ -1,0 +1,41 @@
+﻿@model List<AdvertisementViewModel>
+@inject IArtikliService service
+@{Layout = "~/Views/Shared/_Layout.cshtml";}
+
+
+<div>
+    @if (Model == null)
+    {
+        <div><p>Nema oglasa</p></div>
+    }
+    else
+    {
+    <table>
+        <tr>
+            <th>Tip Oglasa</th>
+            <th>Opis</th>
+            <th>Datum kreiranja</th>
+            <th>Datum isteka</th>
+            <th>Klijent</th>
+        </tr>
+        <tr>
+            <th>Opcije</th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.TypeName</td>
+                <td>@item.Description</td>
+                <td>@item.RegistrationDate</td>
+                <td>@item.ExpirationDate</td>
+                <td>@item.UserName</td>
+            </tr>
+            <tr>
+                <td><a asp-action="ChangeAdvertisement" asp-route-id="@service.GetAdvertisementByNameUser(item.TypeName, item.UserName, item.RegistrationDate.ToString()).AdvertisementId">Izmijeni</a></td>
+                <td><a asp-action="DeleteAdvertisement" 
+                        asp-route-id="@service.GetAdvertisementByNameUser(item.TypeName, item.UserName, item.RegistrationDate.ToString()).AdvertisementId">Izbrisi</a></td>
+            </tr>
+        }
+    </table>
+    }
+</div>

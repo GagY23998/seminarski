@@ -19,8 +19,7 @@ namespace OnlineShopping.Controllers
 
         public AccountController(UserManager<AppUser> userManager,
                                  SignInManager<AppUser> signInManager,
-                                 RoleManager<IdentityRole> roleManager
-                                 )
+                                 RoleManager<IdentityRole> roleManager)
         {
             this.signInManager = signInManager;
             this.roleManager = roleManager;
@@ -33,23 +32,19 @@ namespace OnlineShopping.Controllers
         {
             if (!ModelState.IsValid)
             {
-                return Content("You're shit nigga");
+                return Content("Something went wrong");
             }
             var tryToRegister = await userManager.CreateAsync(new AppUser { UserName = model.UserName, FirstName = model.FirstName, LastName = model.LastName }, model.Password);
             if (tryToRegister.Succeeded)
             {
-                var postojiRola = await roleManager.RoleExistsAsync("CRUD");
-                if (!postojiRola)
-                {
-                    var role = await roleManager.CreateAsync(new IdentityRole { Name = "CRUD" });
-                }
                 var user = await userManager.FindByNameAsync(model.UserName);
-                await userManager.AddToRoleAsync(user, "CRUD");
-                await userManager.AddClaimAsync(user, new Claim("CRUD", "Kreiraj"));
-                return RedirectToAction("Index", "Home");
+
+                var roleUser = roleManager.FindByNameAsync("User");
+                await userManager.AddToRoleAsync(user,roleUser.Result.Name);
+                return RedirectToAction("Index", "Admin");
             }
 
-            return Content("Shit happend");
+            return Content("Something went wrong");
         }
         [HttpGet]
         public IActionResult Login()
@@ -62,16 +57,16 @@ namespace OnlineShopping.Controllers
         {
             if (!ModelState.IsValid)
             {
-                return Content("You're shit nigga");
+                return Content("Something went wrong");
             }
             var result = await signInManager.PasswordSignInAsync(model.UserName, model.Password, false, false);
             if (result.Succeeded)
             {
                 var user = await userManager.GetUserAsync(User);
                 HttpContext.Session.SetUser(user);
-                return RedirectToAction("Index", "Home");
+                return RedirectToAction("Index", "Admin");
             }
-            return Content("Shit happend");
+            return Content("Something went wrong");
         }
         [HttpGet]
         public IActionResult Privacy() => View();
@@ -84,7 +79,7 @@ namespace OnlineShopping.Controllers
                 await signInManager.SignOutAsync();
                 HttpContext.Session.Clear();
             }
-            return RedirectToAction("Index","Home");
+            return RedirectToAction("Index","Admin");
         }
     }
 }

@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Shoppp.Models
+namespace OnlineShopping.Models
 {
     public class Artikl
     {
@@ -12,9 +12,8 @@ namespace Shoppp.Models
         [Key]
         public int ArtiklID { get; set; }
         public string ImeArtikla { get; set; }
-        public float CijenaArtikla { get; set; }
+        public decimal CijenaArtikla { get; set; }
         public int NaStanju { get; set; }
-        public int Kolicina { get; set; }
         public DateTime VrijemePostavlanja { get; set; }
         public byte[] SlikaArtikla { get; set; }
         Kategorija Kategorija { get; set; }

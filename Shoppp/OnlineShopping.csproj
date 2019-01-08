@@ -13,10 +13,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Models\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <None Include="wwwroot\AdminLTE-master\.gitignore" />
     <None Include="wwwroot\AdminLTE-master\.npmignore" />
     <None Include="wwwroot\AdminLTE-master\build\bootstrap-less\.csslintrc" />

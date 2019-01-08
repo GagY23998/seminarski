@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity;
-using Shoppp.Models;
+using OnlineShopping.Models;
 
-namespace Shoppp.HelperUser
+namespace OnlineShopping.HelperUser
 {
     public class AppUser : IdentityUser
     {
@@ -13,6 +13,6 @@ namespace Shoppp.HelperUser
         public string LastName { get; set; }
         public Cart Korpa { get; set; }
         public Favorites Omiljeni { get; set; }
-        public int Rate { get; set; }
+        public int Level { get; set; }
     }
 }
