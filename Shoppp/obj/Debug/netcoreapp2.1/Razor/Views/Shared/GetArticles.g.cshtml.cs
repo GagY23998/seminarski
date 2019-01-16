@@ -78,7 +78,7 @@ using OnlineShopping.HelperUser;
             WriteLiteral("    ");
             EndContext();
             BeginContext(66, 45, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "c97c5fc648874a2ea0d0d661dca2eef1", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "cec57b40b3814e3690ad4d9de5cac809", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_TagHelpers_PartialTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper>();

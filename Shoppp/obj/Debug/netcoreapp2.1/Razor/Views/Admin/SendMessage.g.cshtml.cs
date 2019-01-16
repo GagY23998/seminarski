@@ -116,7 +116,7 @@ using Microsoft.AspNetCore.Http;
                 ");
             EndContext();
             BeginContext(950, 92, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "11d0bcd96eb140398825c173b3f181b6", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9aaefed39d694fb1b6aa89cd07238f4c", async() => {
                 BeginContext(1025, 13, true);
                 WriteLiteral("Back to Inbox");
                 EndContext();
@@ -205,7 +205,7 @@ using Microsoft.AspNetCore.Http;
             WriteLiteral(" class=\"box-title\">Compose New Message</h3>\r\n                    </div>\r\n                    <!-- /.box-header -->\r\n                    ");
             EndContext();
             BeginContext(4077, 1404, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d4251ff27bb945c1b5f22d81bfd13f90", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4f6b0b00e57f4d2eb21fdf49b033805f", async() => {
                 BeginContext(4127, 268, true);
                 WriteLiteral(@"
 
@@ -216,7 +216,7 @@ using Microsoft.AspNetCore.Http;
                                 ");
                 EndContext();
                 BeginContext(4395, 58, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "944cf2f2f07e44e3b3b36aca879e3bd0", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "4010a03a33534fbe9d0812dbc7524bc7", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_PartialTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper>();
@@ -241,7 +241,7 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_PartialTagHelper.Model = service.GetUsers(
                 WriteLiteral("\r\n                            </div>\r\n                        </div>\r\n                        <div class=\"form-group\">\r\n                            ");
                 EndContext();
                 BeginContext(4601, 76, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "cfd235ebeaf843a98395892a49329374", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "0949ef8cb2184c08afbdfe1a1b396a94", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper>();

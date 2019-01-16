@@ -164,7 +164,7 @@ using OnlineShopping.HelperUser;
             WriteLiteral("</td>\r\n            </tr>\r\n            <tr>\r\n                <td>");
             EndContext();
             BeginContext(831, 179, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ebe4febdffc049bdad7a17448c7a3b64", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bb19245144a44d92b1a8e0bbb6b34d1b", async() => {
                 BeginContext(998, 8, true);
                 WriteLiteral("Izmijeni");
                 EndContext();
@@ -199,7 +199,7 @@ using OnlineShopping.HelperUser;
             WriteLiteral("</td>\r\n                <td>");
             EndContext();
             BeginContext(1037, 204, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8ce93f0728ce4e3aa7ab26b698ce1357", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c57cda6fc047404c8d695c81c803978f", async() => {
                 BeginContext(1230, 7, true);
                 WriteLiteral("Izbrisi");
                 EndContext();

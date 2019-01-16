@@ -1,23 +1,25 @@
 ﻿@model OnlineShopping.ViewModels.KategorijaViewModel
-<div>
+<div class="box box-primary">
     <a asp-action="Index">Home</a>
-    <form method="post">
+    <div class="box box-body">
+        <form method="post">
 
-        <div>
-            <label asp-for="ImeKategorije"></label>
-            <span asp-validation-for="@Model.ImeKategorije"></span>
-            <input type="text" name="ImeKategorije" />
-        </div>
-        <div class="prioriteti">
+            <div>
+                <label asp-for="ImeKategorije"></label>
+                <span asp-validation-for="@Model.ImeKategorije"></span>
+                <input type="text" name="ImeKategorije" />
+            </div>
+            <div class="prioriteti">
 
-        </div>
-        <div>
-            <button type="button" id="oznaka">Dodaj Oznaku</button>
-        </div>
-        <div>
-            <input type="submit" value="Potvrdi" />
-        </div>
-    </form>
+            </div>
+            <div>
+                <button type="button" id="oznaka">Dodaj Oznaku</button>
+            </div>
+            <div>
+                <input type="submit" value="Potvrdi" />
+            </div>
+        </form>
+    </div>
 </div>
 <script>
     $(function(){

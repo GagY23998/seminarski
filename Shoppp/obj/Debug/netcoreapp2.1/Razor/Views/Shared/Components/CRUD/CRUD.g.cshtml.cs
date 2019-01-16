@@ -78,7 +78,7 @@ using OnlineShopping.HelperUser;
             WriteLiteral("<li>");
             EndContext();
             BeginContext(4, 105, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4fc52c5879da4c34b7de2ef3a1e7f1ca", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bf3f485e888646968d9f63e5c42b3699", async() => {
                 BeginContext(54, 51, true);
                 WriteLiteral("<i class=\"fa fa-link\"></i><span>Dodaj artikl</span>");
                 EndContext();
@@ -102,7 +102,7 @@ using OnlineShopping.HelperUser;
             WriteLiteral("</li>\r\n<li>");
             EndContext();
             BeginContext(120, 110, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ec69bc87fde947a3bbe241d09c48a17a", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3ced11bb13ac4237a1ddb29844d164cb", async() => {
                 BeginContext(173, 53, true);
                 WriteLiteral("<i class=\"fa fa-link\"></i><span>Izbrisi artikl</span>");
                 EndContext();
@@ -126,7 +126,7 @@ using OnlineShopping.HelperUser;
             WriteLiteral("</li>\r\n<li>");
             EndContext();
             BeginContext(241, 114, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "95a9acb83217400ea04c14c990a00f6e", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6ddca2de202b4518868498bf9d3c38e9", async() => {
                 BeginContext(295, 56, true);
                 WriteLiteral("<i class=\"fa fa-link\"></i><span>Azuriraj Kolicinu</span>");
                 EndContext();
@@ -150,7 +150,7 @@ using OnlineShopping.HelperUser;
             WriteLiteral("</li>\r\n<li>");
             EndContext();
             BeginContext(366, 110, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b3af6b6f9e444d28a9df4a7042824d40", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "28f57414ffda4b01a22e01ae0ec53cfa", async() => {
                 BeginContext(417, 55, true);
                 WriteLiteral("<i class=\"fa fa-link\"></i><span>Dodaj Kategoriju</span>");
                 EndContext();
@@ -174,7 +174,7 @@ using OnlineShopping.HelperUser;
             WriteLiteral("</li>\r\n<li>");
             EndContext();
             BeginContext(487, 115, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0968539b590b4a5d81d5594ae77f2a91", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e9c178b3fd684a639da91975ae9d6601", async() => {
                 BeginContext(541, 57, true);
                 WriteLiteral("<i class=\"fa fa-link\"></i><span>Izbrisi Kategoriju</span>");
                 EndContext();
@@ -198,7 +198,7 @@ using OnlineShopping.HelperUser;
             WriteLiteral("</li>\r\n<li>");
             EndContext();
             BeginContext(613, 118, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "285753785fea4accad8f540a3b64b24a", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a7b25222be0242b481a12e06355ecc06", async() => {
                 BeginContext(670, 57, true);
                 WriteLiteral("<i class=\"fa fa-link\"></i><span>Historija kupovine</span>");
                 EndContext();
@@ -222,7 +222,7 @@ using OnlineShopping.HelperUser;
             WriteLiteral("</li>\r\n<li>");
             EndContext();
             BeginContext(742, 112, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f1b1de48653c4965bcc0dce11a157f7e", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "87babe1cfeaf4864a9ab633f608572a5", async() => {
                 BeginContext(798, 52, true);
                 WriteLiteral("<i class=\"fa fa-link\"></i><span>Dodaj Reklamu</span>");
                 EndContext();
@@ -246,7 +246,7 @@ using OnlineShopping.HelperUser;
             WriteLiteral("</li>\r\n<li>");
             EndContext();
             BeginContext(865, 121, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "51e63794168b4f85b6a01ef08ae44fa1", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8fae380c6ee8456fb53dc108ac54a3ec", async() => {
                 BeginContext(924, 58, true);
                 WriteLiteral("<i class=\"fa fa-link\"></i><span>Upravljaj Reklamama</span>");
                 EndContext();
@@ -270,7 +270,7 @@ using OnlineShopping.HelperUser;
             WriteLiteral("</li>\r\n<li>");
             EndContext();
             BeginContext(997, 128, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9dfdaf4e821e4b3e8492cc6da0b4beb1", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0866dd176ea74181addbf45a24f5a8e9", async() => {
                 BeginContext(1057, 64, true);
                 WriteLiteral("<i class=\"fa fa-link\"></i><span>Evidencija tipova reklama</span>");
                 EndContext();

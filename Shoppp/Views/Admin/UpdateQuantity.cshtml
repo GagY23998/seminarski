@@ -1,14 +1,13 @@
 ﻿@model List<Artikl>
 @{ Layout = "~/Views/Shared/_Layout.cshtml";}
 @inject OnlineShopping.Services.IArtikliService service
-<div class="KolicinaAzuriraj">
+<div class="KolicinaAzuriraj text-center">
         <form>
             <select class="kategorijaChange" asp-items="@{new SelectList(service.GetCategories(),"KategorijaID","ImeKategorije","Nesto")}">
             </select>
-            <div>
-                <table >
-                        
-                    <tbody id="tabelaArtikala">
+            <div class="text-center>
+                <
+                    <tbody id="tabelaArtikala text-center">
                             @*<tr>
                                 <td><input class="form-control" asp-for="@item.ImeArtikla" /></td>
                                 <td><input class="form-control" asp-for="@item.NaStanju" /></td>
@@ -17,8 +16,7 @@
                             </tr>*@
                             <partial name="_ArtiklCategory" model="@Model"/>
                         
-                    </tbody>
-                </table>
+                   
             </div>
         </form>
 </div>

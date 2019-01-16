@@ -81,7 +81,7 @@ using OnlineShopping.HelperUser;
             WriteLiteral("<!DOCTYPE html>\r\n\r\n<html>\r\n");
             EndContext();
             BeginContext(27, 1546, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "70f1511d6f6240f0b87a29aba518dc20", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "104b7738585b4bab87de10bf9788186a", async() => {
                 BeginContext(33, 72, true);
                 WriteLiteral("\r\n    <meta name=\"viewport\" content=\"width=device-width\" />\r\n    <title>");
                 EndContext();
@@ -96,7 +96,7 @@ using OnlineShopping.HelperUser;
                 WriteLiteral("</title>\r\n    ");
                 EndContext();
                 BeginContext(133, 102, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "c7a24a2b0a7e461ea529cf55695bf8d1", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "fe0d552b857d4d0fb1213a1dad199085", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -115,7 +115,7 @@ using OnlineShopping.HelperUser;
                 WriteLiteral("\r\n    <!-- Font Awesome -->\r\n    ");
                 EndContext();
                 BeginContext(268, 103, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "568f7e5afc2348b9b3c4cdb4fdd1dc50", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "db88f12de6b44fc5bfe6b338732e0d6d", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -134,7 +134,7 @@ using OnlineShopping.HelperUser;
                 WriteLiteral("\r\n    <!-- Ionicons -->\r\n    ");
                 EndContext();
                 BeginContext(400, 95, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "3586664804b343868a7258f75c5bfc5a", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "63995ca271be422bb41fde3cb6435fbc", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -153,7 +153,7 @@ using OnlineShopping.HelperUser;
                 WriteLiteral("\r\n    <!-- Theme style -->\r\n    ");
                 EndContext();
                 BeginContext(527, 74, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "2eecfbf31ef847eaa127552ea67e9e68", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "832538f66cea46ca93908a4897e25498", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -172,7 +172,7 @@ using OnlineShopping.HelperUser;
                 WriteLiteral("\r\n    <!-- AdminLTE Skins. Choose a skin from the css/skins\r\n         folder instead of downloading all of them to reduce the load. -->\r\n    ");
                 EndContext();
                 BeginContext(742, 82, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "a29af636885448c884ba000dfd587128", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "5937145ff6bc41068af0d16d090031b1", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -191,7 +191,7 @@ using OnlineShopping.HelperUser;
                 WriteLiteral("\r\n    <!-- Morris chart -->\r\n    ");
                 EndContext();
                 BeginContext(857, 86, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "f176755fd83e4d589c38c81e115598c1", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "806617cf66d4407ca02b79d058a411a4", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -210,7 +210,7 @@ using OnlineShopping.HelperUser;
                 WriteLiteral("\r\n    <!-- jvectormap -->\r\n    ");
                 EndContext();
                 BeginContext(974, 98, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "fe245f8dcb1241439c6b441a4d84ba5f", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "3b218858de054ca282951bba556f5730", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -229,7 +229,7 @@ using OnlineShopping.HelperUser;
                 WriteLiteral("\r\n    <!-- Date Picker -->\r\n    ");
                 EndContext();
                 BeginContext(1104, 124, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "34dfb814a6134dcf91c052e30c07bc3f", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "3bced5fe5654488685f60691d815c2e0", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -248,7 +248,7 @@ using OnlineShopping.HelperUser;
                 WriteLiteral("\r\n    <!-- Daterange picker -->\r\n    ");
                 EndContext();
                 BeginContext(1265, 111, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "410e4920a4ed4848bae3231c93f64181", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "9ea8cba44fdc4eb79b6db7dd69833b59", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -267,7 +267,7 @@ using OnlineShopping.HelperUser;
                 WriteLiteral("\r\n    <!-- bootstrap wysihtml5 - text editor -->\r\n    ");
                 EndContext();
                 BeginContext(1430, 105, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "6e5102d5d2d34ce1b7c01fce330bec65", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "211e038004c44afc97960648c0d96ab0", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -301,7 +301,7 @@ using OnlineShopping.HelperUser;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(1575, 61, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6f464e7a3c824e5588486d9b6857f695", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6da98a67e4da49ad87a8c25c249c70ab", async() => {
                 BeginContext(1581, 21, true);
                 WriteLiteral("\r\n    <div>\r\n        ");
                 EndContext();

@@ -64,7 +64,9 @@ namespace OnlineShopping.Controllers
                     artikl.SlikaArtikla = memStream.ToArray();
                 }
             }
-            if (ModelState.IsValid)
+            
+          
+            if (artikl!= null && ModelState.IsValid)
             {
                 var kategorija = Service.GetCategory(artikl.ImeKategorije);
                 var model = new Artikl
@@ -92,13 +94,13 @@ namespace OnlineShopping.Controllers
                 Service.AddCategory(kategorija);
                 return RedirectToAction(nameof(Index));
             }
-            return View();
+            return View("AddCategory");
         }
         [HttpGet]
         public IActionResult DeleteArticle()
         {
             var model = Service.GetArticles();
-            return View(model);
+            return View(model.ToList());
         }
         [HttpPost]
         public IActionResult DeleteArticle(int ArtiklID)
@@ -111,10 +113,19 @@ namespace OnlineShopping.Controllers
             return View();
         }
         [HttpGet]
-        public IActionResult ChangeArticle(int id) => View(Service.GetArticle(id));
+        public IActionResult ChangeArticle(int id) {
+
+            var model = Service.GetArticle(id);
+            if (model ==null)
+            {
+                return RedirectToAction(nameof(Index));
+            }
+            return View(model);
+        }
         [HttpPost]
         public IActionResult ChangeArticle(Artikl artikl, IFormFile slika, string ImeKategorije)
         {
+            if (artikl == null ||ImeKategorije == null) return View(nameof(Index));
             var model = new Artikl
             {
                 ImeArtikla = artikl.ImeArtikla,
@@ -141,6 +152,7 @@ namespace OnlineShopping.Controllers
         public IActionResult GetArticles(string Pretraga)
         {
             var model = Service.GetArticlesByCategory(Pretraga);
+            if (model == null) return View(nameof(Index));
             return PartialView(model);
         }
         [HttpGet]
@@ -149,7 +161,7 @@ namespace OnlineShopping.Controllers
         public IActionResult SeeArticleHistory(string Pretraga)
         {
             var artiklID = Service.GetArticleIDbyName(Pretraga);
-            if (artiklID == null)
+            if (artiklID == 0)
             {
                 return Content("Ime artikla nije tacno");
             }
@@ -173,7 +185,7 @@ namespace OnlineShopping.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            return Content("Shit happend");
+            return Content("Error 404");
         }
         [HttpGet]
         public IActionResult GetArticleOfCategory(string pretraga)
@@ -186,6 +198,10 @@ namespace OnlineShopping.Controllers
         {
             var user = await userManager.GetUserAsync(User);
             var model = Service.GetMessages(user.Id);
+            if (model.Count==0)
+            {
+                return RedirectToAction(nameof(Index));
+            }
             return View(model);
         }
         [HttpGet]
@@ -367,5 +383,19 @@ namespace OnlineShopping.Controllers
 
             return RedirectToAction(nameof(AddAdvertisementType));
         }
+
+        [HttpPost]
+        public async Task<IActionResult> ChangePicture(IFormFile attachment)
+        {
+            if (attachment == null)
+            {
+                return NotFound();
+            }
+            var ms = new MemoryStream();
+            attachment.CopyTo(ms);
+            var crntUser = await userManager.GetUserAsync(User);
+            Service.ChangePicture(crntUser.Id,ms.ToArray());
+            return Json(string.Format("data:image/png;base64,{0}", Convert.ToBase64String(crntUser.Picture)));
+;        }
     }
 }

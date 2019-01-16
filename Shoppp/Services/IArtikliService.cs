@@ -46,5 +46,6 @@ namespace OnlineShopping.Services
         AdvertisementType GetAdvertisementType(int id);
         List<AdvertisementTypeViewModel> GetAdvertisementTypeModels();
         AdvertisementType GetAdvertisementTypeByName(string name);
+        void ChangePicture(string UserID,byte[] pic);
     }
 }

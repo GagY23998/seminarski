@@ -110,7 +110,7 @@ WriteAttributeValue("", 467, item.CijenaArtikla, 467, 19, false);
             WriteLiteral("/></td>\r\n        <td>");
             EndContext();
             BeginContext(511, 131, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "30d1ea31c721443b99989e8c5084509c", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9cc92f132670479892d90b20dfade08f", async() => {
                 BeginContext(622, 16, true);
                 WriteLiteral("Izmjeniti artikl");
                 EndContext();

@@ -12,7 +12,8 @@ namespace OnlineShopping.HelperUser
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public Cart Korpa { get; set; }
-        public Favorites Omiljeni { get; set; }
+        public Favorites Favorites { get; set; }
         public int Level { get; set; }
+        public byte[] Picture { get; set; }
     }
 }

@@ -83,12 +83,12 @@ using OnlineShopping.HelperUser;
             WriteLiteral("<div>\r\n    ");
             EndContext();
             BeginContext(107, 1189, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1e0e01c38bc440f2b2685a1dd9abb73c", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4d70aee4705a44918838c978d4118459", async() => {
                 BeginContext(157, 10, true);
                 WriteLiteral("\r\n        ");
                 EndContext();
                 BeginContext(167, 88, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "bab123b8420b4e36a0c17e3add5a373f", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "8272c9593df2414da3363c73ebdbba63", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper>();
@@ -134,7 +134,7 @@ WriteAttributeValue("", 363, Model.ImeArtikla, 363, 17, false);
                 WriteLiteral("/></div>\r\n        <div>\r\n            <label>Stanje Artikla</label>");
                 EndContext();
                 BeginContext(447, 87, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "4894cafc069246e09640c28981d9040e", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "f4b8000ade1c41209ffc50357c220a99", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper>();
@@ -170,7 +170,7 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = ModelExpressionProvid
                 WriteLiteral("\r\n        </div>\r\n        <div>\r\n            <label>Cijena Artikla</label>");
                 EndContext();
                 BeginContext(608, 90, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "7d337ae1ba8746f0a7b128f6b6c12a00", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "0ac7d2ab36dd4d929ad4f63c5c5ab323", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper>();
@@ -224,7 +224,7 @@ WriteAttributeValue("", 961, Model.SlikaArtikla, 961, 19, false);
                 WriteLiteral("/>\r\n        </div>\r\n        ");
                 EndContext();
                 BeginContext(1009, 138, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "901571859d824342af83dc56b97eabb0", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "9a3ad54bd4aa47e5830aae3aa56738f8", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper>();

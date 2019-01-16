@@ -8,6 +8,8 @@ using Microsoft.AspNetCore.Mvc;
 using OnlineShopping.HelperUser;
 using OnlineShopping.ViewModels;
 using OnlineShopping.HelperUser;
+using Microsoft.AspNetCore.Http;
+using System.IO;
 
 namespace OnlineShopping.Controllers
 {
@@ -28,13 +30,15 @@ namespace OnlineShopping.Controllers
         [HttpGet]
         public IActionResult Register() => View();
         [HttpPost]
-        public async Task<IActionResult> Register(RegisterViewModel model)
+        public async Task<IActionResult> Register(RegisterViewModel model,IFormFile picture)
         {
             if (!ModelState.IsValid)
             {
                 return Content("Something went wrong");
             }
-            var tryToRegister = await userManager.CreateAsync(new AppUser { UserName = model.UserName, FirstName = model.FirstName, LastName = model.LastName }, model.Password);
+            var ms = new MemoryStream();
+            picture.CopyTo(ms);
+            var tryToRegister = await userManager.CreateAsync(new AppUser { UserName = model.UserName, FirstName = model.FirstName, LastName = model.LastName,Picture =ms.ToArray() }, model.Password);
             if (tryToRegister.Succeeded)
             {
                 var user = await userManager.FindByNameAsync(model.UserName);

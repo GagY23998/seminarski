@@ -79,8 +79,11 @@ namespace OnlineShopping.Services
 
         public Artikl GetArticle(int articleID)
         {
+            if(articleID!=0) { 
             var model= _context.Articles.FirstOrDefault(ar => ar.ArtiklID == articleID);
             return model;
+            }
+            return null;
         }
 
         public int GetArticleIDbyName(string name)
@@ -96,6 +99,7 @@ namespace OnlineShopping.Services
         public IEnumerable<Artikl> GetArticlesByCategory(string pretraga)
         {
             var kategorija = _context.Categories.FirstOrDefault(k => k.ImeKategorije == pretraga);
+            if (kategorija == null) return null;
             var model = _context.Articles.Where(a => a.KategorijaID == kategorija.KategorijaID).ToList();
             return model;
         }
@@ -117,7 +121,7 @@ namespace OnlineShopping.Services
                 User = _context.Users.FirstOrDefault(u=>u.Id == arh.User.Id),
                 Artikl = artikl
             });
-            return model;
+            return model.ToList();
         }
         public List<ArtiklOneViewModel> ArticlesExpire()
         {
@@ -324,6 +328,14 @@ namespace OnlineShopping.Services
         {
             var model = _context.AdvertisementTypes.OrderBy(adT => adT.TypeName).Select(adT=>new AdvertisementTypeViewModel { AdvertisementType = adT.TypeName}).ToList();
             return model;
+        }
+
+        public void ChangePicture(string UserID,byte[] pic)
+        {
+            var user = _context.Users.FirstOrDefault(u => u.Id == UserID);
+            user.Picture = pic;
+            _context.Update(user).State = EntityState.Modified;
+            _context.SaveChanges();
         }
     }
 }

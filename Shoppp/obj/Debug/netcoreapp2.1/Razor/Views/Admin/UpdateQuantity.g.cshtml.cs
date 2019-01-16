@@ -78,12 +78,12 @@ using OnlineShopping.HelperUser;
             WriteLiteral("<div class=\"KolicinaAzuriraj\">\r\n        ");
             EndContext();
             BeginContext(165, 947, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f5e162de2b6e4a56bf24ce1de6bd8908", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d1532a42fa0042f98e7b59f3a6307d6a", async() => {
                 BeginContext(171, 14, true);
                 WriteLiteral("\r\n            ");
                 EndContext();
                 BeginContext(185, 150, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("select", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2072efe5b5114cbea80e9c4bf227d1e9", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("select", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1ae54815652d45739157fb51337e0ff1", async() => {
                     BeginContext(312, 14, true);
                     WriteLiteral("\r\n            ");
                     EndContext();
@@ -113,7 +113,7 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper.Items = new SelectList(ser
                 WriteLiteral("                            ");
                 EndContext();
                 BeginContext(945, 48, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "dad4212f9149497aaa96db8d2eeac097", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "2451245045bf4339aede8e3e2d2640a2", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_PartialTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper>();

@@ -374,6 +374,8 @@ namespace OnlineShopping.Migrations
                 {
                     b.HasBaseType("Microsoft.AspNetCore.Identity.IdentityUser");
 
+                    b.Property<int?>("FavoritesId");
+
                     b.Property<string>("FirstName");
 
                     b.Property<int?>("KorpaCartId");
@@ -382,11 +384,11 @@ namespace OnlineShopping.Migrations
 
                     b.Property<int>("Level");
 
-                    b.Property<int?>("OmiljeniFavoritesId");
+                    b.Property<byte[]>("Picture");
+
+                    b.HasIndex("FavoritesId");
 
                     b.HasIndex("KorpaCartId");
-
-                    b.HasIndex("OmiljeniFavoritesId");
 
                     b.ToTable("AppUser");
 
@@ -494,13 +496,13 @@ namespace OnlineShopping.Migrations
 
             modelBuilder.Entity("OnlineShopping.HelperUser.AppUser", b =>
                 {
+                    b.HasOne("OnlineShopping.Models.Favorites", "Favorites")
+                        .WithMany()
+                        .HasForeignKey("FavoritesId");
+
                     b.HasOne("OnlineShopping.Models.Cart", "Korpa")
                         .WithMany()
                         .HasForeignKey("KorpaCartId");
-
-                    b.HasOne("OnlineShopping.Models.Favorites", "Omiljeni")
-                        .WithMany()
-                        .HasForeignKey("OmiljeniFavoritesId");
                 });
 #pragma warning restore 612, 618
         }

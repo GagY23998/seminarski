@@ -72,12 +72,12 @@ using OnlineShopping.HelperUser;
             WriteLiteral("<div>\r\n    ");
             EndContext();
             BeginContext(62, 205, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e6a4c1cb5b0f434688dfef9ffce216a0", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "43f79ef17182418cbafc8fde17b836cc", async() => {
                 BeginContext(82, 10, true);
                 WriteLiteral("\r\n        ");
                 EndContext();
                 BeginContext(92, 114, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("select", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0e0af9042965458480718721392534d9", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("select", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b7ea549853674eb7b86fe1f51326e2b4", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.SelectTagHelper>();
