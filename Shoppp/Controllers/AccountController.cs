@@ -30,15 +30,13 @@ namespace OnlineShopping.Controllers
         [HttpGet]
         public IActionResult Register() => View();
         [HttpPost]
-        public async Task<IActionResult> Register(RegisterViewModel model,IFormFile picture)
+        public async Task<IActionResult> Register(RegisterViewModel model)
         {
             if (!ModelState.IsValid)
             {
-                return Content("Something went wrong");
+                return View();
             }
-            var ms = new MemoryStream();
-            picture.CopyTo(ms);
-            var tryToRegister = await userManager.CreateAsync(new AppUser { UserName = model.UserName, FirstName = model.FirstName, LastName = model.LastName,Picture =ms.ToArray() }, model.Password);
+            var tryToRegister = await userManager.CreateAsync(new AppUser { UserName = model.UserName, FirstName = model.FirstName, LastName = model.LastName}, model.Password);
             if (tryToRegister.Succeeded)
             {
                 var user = await userManager.FindByNameAsync(model.UserName);

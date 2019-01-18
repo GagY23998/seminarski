@@ -11,13 +11,13 @@ namespace OnlineShopping.ViewModels
         [Required]
         public string UserName { get; set; }
         [Required]
-        [RegularExpression(@"[A-Za-z]*\d+")]
+        [RegularExpression(@"[A-Za-z]{5,}\d+")]
         public string Password { get; set; }
         [Required]
-        [RegularExpression(@"[^\d+]")]
+        [RegularExpression(@"[A-Za-z]{5,}")]
         public string FirstName { get; set; }
         [Required]
-        [RegularExpression(@"[^\d+]")]
+        [RegularExpression(@"[A-Za-z]{5,}")]
         public string LastName { get; set; }
         [Required]
         [RegularExpression(@".+@hotmail\.com")]
