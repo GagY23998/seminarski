@@ -1,0 +1,40 @@
+﻿@model Kategorija
+@inject IArtikliService service
+<div class="box box-primary">
+    <div class="box-body">
+        <form method="post">
+
+            <select id="CatChanging" asp-for="KategorijaID" asp-items="@{new SelectList(service.GetCategories(), "KategorijaID", "ImeKategorije", "Pick something")}"></select>
+            <button type="submit" class="btn btn-primary">Potvrdi</button>
+            <div class="catList"></div>
+        </form>
+    </div>
+</div>
+
+
+<script>
+    $(function () {
+        $("#CatChanging").change(function () {
+            $.ajax({
+                url: "/Admin/GetCatList",
+                type: "GET",
+                data: { id: Number($("select").val()) },
+                success: function (data) {
+                    $(".catList").empty();
+                    $(data).each((i, item) => {
+                        $(".catList").append(`<div>
+                        <div>
+                        <label>Ime prioriteta:</label>
+                        <input disabled value="${item["charName"]}"/>
+                        <label>Prioritet:</label>
+                        <input disabled value="${item["priority"]}"/>
+                        </div>
+                    </div>`);
+                    });
+                    console.log(data);
+                },
+                error: () => console.log("Error")
+            });
+        });
+    });
+</script>

@@ -1,0 +1,9 @@
+﻿@model List<AppUser>
+
+<ul class="list-group">
+
+    @foreach (var item in Model)
+    {
+        <li class="myuser list-group-item" style="display:none"><p style="display:none">@item.FirstName @item.LastName</p><p class="emailClick" style="cursor:pointer">@item.UserName</p></li>
+    }
+</ul>

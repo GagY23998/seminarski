@@ -1,0 +1,26 @@
+﻿@model IEnumerable<OnlineShopping.ViewModels.ArticlePurchaseHistoryViewModel>
+@{  decimal ukupno = 0;}
+
+<table>
+    <tr>
+        <th>Ime Artikla</th>
+        <th>Ime Kupca</th>
+        <th>Email Kupca</th>
+        <th>Kolicina</th>
+        <th>Ukupna cijena</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        ukupno = ukupno+ item.TotalPrice;
+        <tr>
+            <td>@item.Artikl.ImeArtikla</td>
+            <td>@item.User.UserName</td>
+            <td>@item.User.Email</td>
+            <td>@item.Amount</td>
+            <td>@item.TotalPrice</td>
+        </tr>
+    }
+    <tr><th>Ukupno:</th><td>@ukupno</td></tr>
+</table>
+
+

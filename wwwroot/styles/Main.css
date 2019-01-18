@@ -1,0 +1,75 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Archivo');
+@font-face {
+    src:url('https://fonts.googleapis.com/css?family=Archivo');
+}
+body{
+    margin:0;
+    padding:0;
+    display:inline-block;
+    height:1000px;
+    width:1350px;
+    display:flex;
+    align-items:center;
+    flex-direction:row;
+    flex-wrap:wrap;
+}
+header {
+    width: 100%;
+    height: 150px;
+    background-color: darkseagreen;
+    position: relative;
+    bottom: 25px;
+}
+main,aside,footer{
+    position:relative;
+    bottom:25px;
+}
+main{
+    height:500px;
+    width:80%;
+    background-color:whitesmoke;
+    overflow: auto;
+    display:flex;
+    flex-grow:initial;
+    flex-wrap:wrap;
+    text-align:center;
+}
+aside{
+    background-color:darkseagreen;
+    display:block;
+    width:20%;
+    height:500px;
+    text-align:center;
+    left:1081px;
+    bottom:656px;
+}
+footer{
+    height:200px;
+    width:1350px;
+    align-content:center;
+    background-color: aqua;
+    text-align:center;
+    position:relative;
+    bottom:200px;
+    color:white;
+    font-family:"Archivo",sans-serif;
+}
+footer>p{
+    position:relative;
+    top:20px;
+}
+aside a{
+    border:1px solid black;
+    margin:20px;
+    padding:20px;
+    display:block;
+    text-decoration:none;
+    color:white;
+    background-color:#20855c;
+    font-family:"Archivo",sans-serif;
+    font-size:1.2em;
+    border-radius:20px;
+}
+aside a:hover{
+    border-bottom:2px solid white;
+}
