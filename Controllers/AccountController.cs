@@ -7,7 +7,6 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using OnlineShopping.HelperUser;
 using OnlineShopping.ViewModels;
-using OnlineShopping.HelperUser;
 using Microsoft.AspNetCore.Http;
 using System.IO;
 

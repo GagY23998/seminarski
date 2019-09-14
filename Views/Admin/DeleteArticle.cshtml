@@ -2,9 +2,30 @@
 @inject Artikl artikl
 <div class="box box-primary">
     <div class="box-body">
-        <form method="post">
-            <select asp-for="@artikl" asp-items="@(new SelectList(Model, "ArtiklID", "ImeArtikla"))" name="ArtiklID"></select>
-            <button type="submit">Potvrdi</button>
-        </form>
+            @*<select asp-for="@artikl" asp-items="@(new SelectList(Model, "ArtiklID", "ImeArtikla"))" name="ArtiklID"></select>*@
+
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <td>Article Name</td>
+                        <td>Price</td>
+                        <td>Register Date</td>
+                        <td>Article Quantity</td>
+                        <td>Action</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr class="text-center">
+                            <td>@item.ImeArtikla</td>
+                            <td>@item.NaStanju</td>
+                            <td>@item.VrijemePostavlanja</td>
+                            <td>@item.CijenaArtikla km</td>
+                            <td><a asp-action="DeleteArticle" asp-route-id="@item.ArtiklID">Delete</a></td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
     </div>
 </div>  

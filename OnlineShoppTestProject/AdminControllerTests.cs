@@ -30,7 +30,7 @@ namespace OnlineShoppTestProject
     public class AdminControllerTests
     {
         public Mock<FakeUserManager> mockUserManager { get; set; }
-        public Mock<FakeSignInManager> mockSignInManager { get; set; }
+        public Mock<FakeSignInManager> MockSignInManager { get; set; }
         public Mock<ArtikliService> mockService { get; set; }
         public Mock<FakeRoleManager> mockRoleManager { get; set; }
         public ApplicationDbContext context { get; set; }
@@ -43,10 +43,10 @@ namespace OnlineShoppTestProject
             context = new ApplicationDbContext(options);
 
             mockUserManager = new Mock<FakeUserManager>();
-            mockSignInManager = new Mock<FakeSignInManager>();
+            MockSignInManager = new Mock<FakeSignInManager>();
             mockService = new Mock<ArtikliService>(MockBehavior.Strict, context);
             mockRoleManager = new Mock<FakeRoleManager>();
-            controller = new AdminController(mockService.Object, mockSignInManager.Object,
+            controller = new AdminController(mockService.Object, MockSignInManager.Object,
                                                 mockUserManager.Object,
                                                 mockRoleManager.Object);
         }
@@ -60,7 +60,7 @@ namespace OnlineShoppTestProject
             context.Database.EnsureDeleted();
             context.Dispose();
             mockUserManager.Reset();
-            mockSignInManager.Reset();
+            MockSignInManager.Reset();
             mockRoleManager.Reset();
             mockService.Reset();
             controller.Dispose();
@@ -82,7 +82,7 @@ namespace OnlineShoppTestProject
             //      var controller = new AdminController(mockService.Object, mockSignInManager.Object, mockUserManager.Object, mockRoleManager.Object);
             //Act
             var article = new OnlineShopping.ViewModels.ArtiklOneViewModel { ImeArtikla = null, ImeKategorije = null };
-            controller.ModelState.AddModelError("Greska", "Jer mi se hoce");
+            controller.ModelState.AddModelError("Greska", "Error for no reason");
 
             var result = await controller.AddArticle(article, null);
             //Assert
@@ -122,7 +122,7 @@ namespace OnlineShoppTestProject
         [TestMethod]
         public void AddCategory_ModelIsNotValid_ReturnRedirecToActionView()
         {
-            var controller = new AdminController(mockService.Object, mockSignInManager.Object, mockUserManager.Object, mockRoleManager.Object);
+            var controller = new AdminController(mockService.Object, MockSignInManager.Object, mockUserManager.Object, mockRoleManager.Object);
             //Act
             var viewName = controller.AddCategory(new KategorijaViewModel { ImeKategorije = "Cizma" });
             //Assert

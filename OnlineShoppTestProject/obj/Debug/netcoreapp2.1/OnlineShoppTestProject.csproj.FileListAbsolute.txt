@@ -20,3 +20,25 @@ C:\Users\Asus-i5\source\repos\RSI_Seminarski\OnlineShop\OnlineShoppTestProject\o
 C:\Users\Asus-i5\source\repos\RSI_Seminarski\OnlineShop\OnlineShoppTestProject\bin\Debug\netcoreapp2.1\Microsoft.CodeAnalysis.Workspaces.dll
 C:\Users\Asus-i5\source\repos\RSI_Seminarski\OnlineShop\OnlineShoppTestProject\bin\Debug\netcoreapp2.1\Microsoft.CodeAnalysis.Workspaces.pdb
 C:\Users\Asus-i5\source\repos\RSI_Seminarski\OnlineShop\OnlineShoppTestProject\bin\Debug\netcoreapp2.1\Microsoft.CodeAnalysis.Workspaces.xml
+C:\Users\Asus-i5\Desktop\RS1_Seminarski git\OnlineShop\OnlineShoppTestProject\obj\Debug\netcoreapp2.1\OnlineShoppTestProject.csprojAssemblyReference.cache
+C:\Users\Asus-i5\Desktop\RS1_Seminarski git\OnlineShop\OnlineShoppTestProject\obj\Debug\netcoreapp2.1\OnlineShoppTestProject.csproj.CoreCompileInputs.cache
+C:\Users\Asus-i5\Desktop\RS1_Seminarski git\OnlineShop\OnlineShoppTestProject\obj\Debug\netcoreapp2.1\OnlineShoppTestProject.AssemblyInfoInputs.cache
+C:\Users\Asus-i5\Desktop\RS1_Seminarski git\OnlineShop\OnlineShoppTestProject\obj\Debug\netcoreapp2.1\OnlineShoppTestProject.AssemblyInfo.cs
+C:\Users\Asus-i5\Desktop\RS1_Seminarski git\OnlineShop\OnlineShoppTestProject\bin\Debug\netcoreapp2.1\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\Asus-i5\Desktop\RS1_Seminarski git\OnlineShop\OnlineShoppTestProject\bin\Debug\netcoreapp2.1\OnlineShopping.dll
+C:\Users\Asus-i5\Desktop\RS1_Seminarski git\OnlineShop\OnlineShoppTestProject\bin\Debug\netcoreapp2.1\Microsoft.CodeAnalysis.Workspaces.pdb
+C:\Users\Asus-i5\Desktop\RS1_Seminarski git\OnlineShop\OnlineShoppTestProject\bin\Debug\netcoreapp2.1\Microsoft.CodeAnalysis.Workspaces.xml
+C:\Users\Asus-i5\Desktop\RS1_Seminarski git\OnlineShop\OnlineShoppTestProject\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\Asus-i5\Desktop\RS1_Seminarski git\OnlineShop\OnlineShoppTestProject\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\Asus-i5\Desktop\RS1_Seminarski git\OnlineShop\OnlineShoppTestProject\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\Asus-i5\Desktop\RS1_Seminarski git\OnlineShop\OnlineShoppTestProject\bin\Debug\netcoreapp2.1\OnlineShopping.Views.dll
+C:\Users\Asus-i5\Desktop\RS1_Seminarski git\OnlineShop\OnlineShoppTestProject\bin\Debug\netcoreapp2.1\OnlineShopping.Views.pdb
+C:\Users\Asus-i5\Desktop\RS1_Seminarski git\OnlineShop\OnlineShoppTestProject\bin\Debug\netcoreapp2.1\OnlineShoppTestProject.deps.json
+C:\Users\Asus-i5\Desktop\RS1_Seminarski git\OnlineShop\OnlineShoppTestProject\bin\Debug\netcoreapp2.1\OnlineShoppTestProject.runtimeconfig.json
+C:\Users\Asus-i5\Desktop\RS1_Seminarski git\OnlineShop\OnlineShoppTestProject\bin\Debug\netcoreapp2.1\OnlineShoppTestProject.runtimeconfig.dev.json
+C:\Users\Asus-i5\Desktop\RS1_Seminarski git\OnlineShop\OnlineShoppTestProject\bin\Debug\netcoreapp2.1\OnlineShoppTestProject.dll
+C:\Users\Asus-i5\Desktop\RS1_Seminarski git\OnlineShop\OnlineShoppTestProject\bin\Debug\netcoreapp2.1\OnlineShoppTestProject.pdb
+C:\Users\Asus-i5\Desktop\RS1_Seminarski git\OnlineShop\OnlineShoppTestProject\bin\Debug\netcoreapp2.1\OnlineShopping.pdb
+C:\Users\Asus-i5\Desktop\RS1_Seminarski git\OnlineShop\OnlineShoppTestProject\obj\Debug\netcoreapp2.1\OnlineShoppTestProject.csproj.CopyComplete
+C:\Users\Asus-i5\Desktop\RS1_Seminarski git\OnlineShop\OnlineShoppTestProject\obj\Debug\netcoreapp2.1\OnlineShoppTestProject.dll
+C:\Users\Asus-i5\Desktop\RS1_Seminarski git\OnlineShop\OnlineShoppTestProject\obj\Debug\netcoreapp2.1\OnlineShoppTestProject.pdb

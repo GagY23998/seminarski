@@ -1,22 +1,22 @@
 ﻿@model OnlineShopping.ViewModels.KategorijaViewModel
 <div class="box box-primary">
-    <a asp-action="Index">Home</a>
     <div class="box box-body">
         <form method="post">
 
-            <div>
-                <label asp-for="ImeKategorije"></label>
+            <div class="form-group row col-sm-6 col-sm-offset-3">
+                <label class="col-form-label col-sm-4 col-sm-push-2" asp-for="ImeKategorije">Category name:</label>
+                <div class="col-sm-offset-2 col-sm-5">
+                <input class="form-control" type="text" name="ImeKategorije" />
                 <span asp-validation-for="@Model.ImeKategorije"></span>
-                <input type="text" name="ImeKategorije" />
+                </div>
             </div>
-            <div class="prioriteti">
+            <div class="prioriteti form-group">
 
             </div>
-            <div>
-                <button type="button" id="oznaka">Dodaj Oznaku</button>
-            </div>
-            <div>
-                <input type="submit" value="Potvrdi" />
+            <br/>
+            <div class="form-group row col-sm-6 col-sm-offset-5">
+                <button class="btn btn-primary" type="button" id="oznaka">Dodaj Oznaku</button>
+                <input class="btn btn-warning" type="submit" value="Potvrdi" />
             </div>
         </form>
     </div>
@@ -26,11 +26,15 @@
         let cnt = 0;        
         $("#oznaka").click(function(){
             $(".prioriteti").append(`
-                    <div>
-                        <label>Oznaka${cnt + 1}</label>
-                        <input type="text" name="charachteristics[${cnt}].CharName" placeholder="Dodaj novu oznaku"/>
-                        <label>Prioritet</label>
-                        <input type="number" name="charachteristics[${cnt++}].Priority placeholder="Dodaj priortet" />
+                    <div class="form-group row col-sm-6 col-sm-offset-4">
+                        <div class="form-group col-sm-4">
+                            <label class="col-form-label">Oznaka ${cnt + 1}</label>
+                            <input class="form-control" type="text" name="charachteristics[${cnt}].CharName" placeholder="Dodaj novu oznaku"/>
+                        </div>                        
+                        <div class="form-group col-sm-4">
+                            <label class="col-form-label">Prioritet</label>
+                            <input class="form-control" type="number" name="charachteristics[${cnt++}].Priority placeholder="Dodaj priortet" />
+                        </div>
                     </div>`);
         });
     });

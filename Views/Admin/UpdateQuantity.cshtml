@@ -2,29 +2,31 @@
 @{ Layout = "~/Views/Shared/_Layout.cshtml";}
 @inject OnlineShopping.Services.IArtikliService service
 <div class="KolicinaAzuriraj text-center">
-        <form>
-            <select class="kategorijaChange" asp-items="@{new SelectList(service.GetCategories(),"KategorijaID","ImeKategorije","Nesto")}">
-            </select>
-            <div class="text-center>
-                <
-                    <tbody id="tabelaArtikala text-center">
-                            @*<tr>
-                                <td><input class="form-control" asp-for="@item.ImeArtikla" /></td>
-                                <td><input class="form-control" asp-for="@item.NaStanju" /></td>
-                                <td><input class="form-control" asp-for="@item.CijenaArtikla" /></td>
-                                <input type="hidden" asp-for="@item.KategorijaID" />
-                            </tr>*@
-                            <partial name="_ArtiklCategory" model="@Model"/>
-                        
-                   
-            </div>
-        </form>
-</div>
+    <form>
+        <select style="padding-bottom:10px" class="col-sm-push-5 list-group-item" id="kategorijaChange" asp-items="@{new SelectList(service.GetCategories(),"KategorijaID","ImeKategorije","Nesto")}"></select>
+        <div class="text-center>
+
+            <tbody id="tabelaArtikala text-center">
+                @*<tr>
+                        <td><input class="form-control" asp-for="@item.ImeArtikla" /></td>
+                        <td><input class="form-control" asp-for="@item.NaStanju" /></td>
+                        <td><input class="form-control" asp-for="@item.CijenaArtikla" /></td>
+                        <input type="hidden" asp-for="@item.KategorijaID" />
+                    </tr>*@
+                <partial name="_ArtiklCategory" model="@Model" />
+
+
+        </div>
+    </form>
+</div><script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous"></script>
 <script>
     $(function () {
-        $(".kategorijaChange").change(function () {
-            $(".myitemRow  > .itemCategory").each((i, item)=>$(item).val() == $(".kategorijaChange").val() ?
-                    $(item).parent().show() : $(item).parent().hide());
+        $("#kategorijaChange").change(function () {
+            console.log("Change happend");
+            $(".myitemRow  > .itemCategory").each((i, item) => $(item).val() == $("#kategorijaChange").val() ?
+                $(item).parent().show() : $(item).parent().hide());
         });
     });
 

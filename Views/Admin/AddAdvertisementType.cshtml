@@ -5,24 +5,35 @@
 
 <div class="box-body text-center">
     <div class="text-center">
-        <table class="table-bordered">
-            <tr class="row"><th>Tipovi oglasa</th><th>Opcije</th></tr>
-
+        <table class="table table-bordered">
+            <thead>
+            <tr>
+                <td>Advertisement type</td>
+                <td>Option</td>
+            </tr>
+            </thead>
+            <tbody>
             @foreach (var item in service.GetAdvertisementTypeModels())
             {
-                <tr class="row"><td>@item.AdvertisementType</td> <td><a asp-action="DeleteAdvertisementType" asp-route-name="@item.AdvertisementType">Obrisi</a></td></tr>
+                <tr>
+                    <td>@item.AdvertisementType</td> 
+                    <td><a asp-action="DeleteAdvertisementType" asp-route-name="@item.AdvertisementType">Obrisi</a></td>
+                </tr>
             }
 
+            </tbody>
         </table>
     </div>
 </div>
 <form method="post">
 
 <div class="box-body">
-    <label> Tip oglasa:</label>
-    <input type="text" asp-for="@Model.AdvertisementType" />
-    <span asp-validation-for="@Model.AdvertisementType"></span>
-    <button class="btn btn-primary">Potvrdi</button>
+    <label class="control-label col-sm-4 col-sm-push-2" >Advertisement type: </label>
+    <div class="form-group col-sm-5">
+        <input class="form-control col-sm-2 " type="text" asp-for="@Model.AdvertisementType" />
+        <span asp-validation-for="@Model.AdvertisementType"></span>
+    </div>
+    <button class="btn btn-primary">Submit</button>
 </div>
 </form>
-    <a asp-action="Index">Home</a>
+  

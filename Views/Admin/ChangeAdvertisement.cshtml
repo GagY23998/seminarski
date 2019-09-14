@@ -5,13 +5,13 @@
     <form method="post" enctype="multipart/form-data">
 
         <div class="form-group-sm">
-            <label asp-for="@Model.TypeName">Tip Oglasa:</label>
-            <input type="text" asp-for="@Model.TypeName" value="@Model.TypeName"/>
+            <label class="control-label" asp-for="@Model.TypeName">Tip Oglasa:</label>
+            <input class="form-control" type="text" asp-for="@Model.TypeName" value="@Model.TypeName"/>
             <span asp-validation-for="@Model.TypeName"></span>
         </div>
         <div class="form-group-sm">
-            <label asp-for="@Model.UserName">Klijent:</label>
-            <input type="text" asp-for="@Model.UserName"/>
+            <label class="control-label" asp-for="@Model.UserName">Klijent:</label>
+            <input class="form-control" type="text" asp-for="@Model.UserName"/>
             <span asp-validation-for="@Model.UserName"></span>
         </div>
         <div class="form-group-sm">
@@ -21,12 +21,12 @@
         </div>
         <div class="form-group-sm">
             <label asp-for="@Model.Description">Opis:</label>
-            <textarea asp-for="@Model.Description"></textarea>
+            <textarea class="form-control" asp-for="@Model.Description"></textarea>
             <span asp-validation-for="@Model.Description"></span>
         </div>
         <div class="form-group-sm">
-            <label asp-for="@Model.ExpirationDate">Datum isteka:</label>
-            <input class="datepicker" type="date" asp-for="@Model.ExpirationDate"/>
+            <label class="control-label" asp-for="@Model.ExpirationDate">Datum isteka:</label>
+            <input class="form-control datepicker" type="date" asp-for="@Model.ExpirationDate"/>
             <span asp-validation-for="@Model.ExpirationDate"></span>
         </div>
         <div class="form-group-sm">

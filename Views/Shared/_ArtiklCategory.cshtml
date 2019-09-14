@@ -1,21 +1,26 @@
 ﻿@model List<Artikl>
-<table class="box text-center">
+<table class="table table-bordered">
+    <thead>
+
     <tr>
         <th>Ime Artikla</th>
         <th>Cijena Artikla</th>
         <th>Na stanju</th>
     </tr>
+    </thead>
+<tbody>
 
 @for (int i = 0; i < Model.Count; i++)
 {
-    <tr class="myitemRow text-center">
+    <tr class="myitemRow">
         <td class="myitem"><input type="text"   class="form-control" asp-for="@Model[i].ImeArtikla"  /></td>
         <td class="myitem"><input step=".01" class="form-control" asp-for="@Model[i].CijenaArtikla"  /></td>
         <td class="myitem"><input type="number" class="form-control" asp-for="@Model[i].NaStanju"  /></td>
         <td><a asp-action="ChangeArticle"  asp-controller="Admin" asp-route-id="@Model[i].ArtiklID">Izmijeni Artikl</a></td>
-        <input type="hidden" asp-for="@Model[i].SlikaArtikla" />
-        <input type="hidden" class="itemCategory" asp-for="@Model[i].KategorijaID" />
-        <input type="hidden" asp-for="@Model[i].ArtiklID" />
+        <input class="form-control" type="hidden" asp-for="@Model[i].SlikaArtikla" />
+        <input class="form-control itemCategory" type="hidden" asp-for="@Model[i].KategorijaID" />
+        <input class="form-control" type="hidden" asp-for="@Model[i].ArtiklID" />
     </tr>
 }
+</tbody>
 </table>

@@ -1,13 +1,29 @@
 ﻿@model OnlineShopping.ViewModels.ArtiklViewModel
 
 
-<div class="col">
-
-    @foreach (var item in Model)
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <td>Ime artikla</td>
+            <td>Na stanju</td>
+            <td>Vrijeme postavljanja</td>
+            <td>Cijena artikla</td>
+            <td>Akcija</td>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model.Articles)
     {
-        <partial name="ArtiklPartial" model="@item" />
+        <tr>
+            <td>@item.ImeArtikla</td>
+            <td>@item.NaStanju</td>
+            <td>@item.VrijemePostavlanja</td>
+            <td>@item.CijenaArtikla KM</td>
+            <td><a asp-action="ChangeArticle" asp-route-id="@item.ArtiklID">Uredi</a></td>
+        </tr>
     }
+    </tbody>
+</table>    
 
-</div>
 
  

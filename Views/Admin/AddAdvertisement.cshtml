@@ -4,44 +4,49 @@
 @inject IArtikliService service
 @inject IHttpContextAccessor access
 @{ Layout = "~/Views/Shared/_Layout.cshtml";}
+
 <div class="box box-primary col-xs-6">
     <a asp-action="Index">Home</a>
     <div class="box-body text-center">
         <form method="post" enctype="multipart/form-data">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group-sm">
-                <label>Tip Oglasa:</label>
-                <select asp-for="@Model.TypeName" asp-items="@{new SelectList(service.GetAdvertisementTypeModels(),"AdvertisementType","AdvertisementType")}"></select>
+            <div class="form-group row">
+                <label style="text-align:left" class="col-sm-2 col-sm-offset-3 col-form-label">Tip Oglasa:</label>
+                <div class="col-sm-4">
+                <select class="list-group-item" asp-for="@Model.TypeName" asp-items="@{new SelectList(service.GetAdvertisementTypeModels(),"AdvertisementType","AdvertisementType")}"></select>
+                </div>
                 <span class="text-danger" asp-validation-for="@Model.TypeName"></span>
             </div>
-            <div class="form-group-sm">
-                <label>Klijent:</label>
-                <input type="text" asp-for="@Model.UserName" id="username" />
+            <div class="form-group row mb-2">
+                <label style="text-align:left" class="col-form-label col-sm-offset-3 col-sm-2">Client:</label>
+                <div class="col-sm-4"><input class="form-control" type="text" asp-for="@Model.UserName" id="username" /></div>
                 <div class="users">
                     <partial name="_UserName" model="@service.GetUsers()" />
                 </div>
                 <span class="text-danger" asp-validation-for="@Model.UserName"></span>
             </div>
-            <div class="form-group-sm">
-                <label asp-for="@Model.Description">Opis:</label>
-                <input type="text" asp-for="@Model.Description" />
+            <div class="form-group row">
+                <label style="text-align:left" class="col-form-label col-sm-offset-3 col-sm-2" >Description:</label>
+                <div class="col-sm-4"><input class="form-control" type="text" asp-for="@Model.Description" />
                 <span class="text-danger" asp-validation-for="@Model.Description"></span>
+                </div>
             </div>
-            <div class="form-group-sm">
-                <label asp-for="@Model.ExpirationDate"></label>
-                <input class="datepicker" asp-for="@Model.ExpirationDate" type="date" />
+            <div class="form-group row">
+                <label  style="text-align:left" class="col-sm-2 col-sm-offset-3 col-form-label" asp-for="@Model.ExpirationDate">Expiration Date:</label>
+                <div class="col-sm-4"><input class="form-control datepicker" asp-for="@Model.ExpirationDate" type="date" /></div>
                 <span class="text-danger" asp-validation-for="@Model.ExpirationDate"></span>
 
             </div>
-            <div class="form-group-sm">
-                <label>Slika oglasa:</label>
-                <div class="btn btn-default btn-file">
-                    <i class="fa fa-paperclip"></i> Slika
-                    <input type="file" required name="picture">
-                </div>
-            </div>
+            <div class="form-group row">
+                <label style="text-align:left" class="col-form-label col-sm-offset-3 col-sm-2">Advertisement picture:</label>
+                <div class="col-sm-4">
+                    <div class="btn btn-default btn-file">
+                        <i class="fa fa-paperclip"></i> Picture
+                        <input type="file" required name="picture">
+                    </div>
+                </div>            </div>
             <div>
-                <button class="btn btn-primary" type="submit">Potvrdi</button>
+                <button class="btn btn-primary" type="submit">Submit</button>
                 <button class="btn btn-warning" type="reset">Reset</button>
             </div>
         </form>
