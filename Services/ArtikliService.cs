@@ -94,7 +94,7 @@ namespace OnlineShopping.Services
 
         public IEnumerable<Artikl> GetArticles( )
         {
-            return _context.Articles.OrderBy(art => art.ImeArtikla);
+            return _context.Articles.OrderBy(art => art.ImeArtikla).ToList();
         }
         public IEnumerable<Artikl> GetArticlesByName(string naziv,int?KategorijaID)
         {

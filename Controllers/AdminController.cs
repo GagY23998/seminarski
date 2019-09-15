@@ -66,9 +66,9 @@ namespace OnlineShopping.Controllers
                     artikl.SlikaArtikla = memStream.ToArray();
                 }
             }
-            
-          
-            if (artikl!= null && ModelState.IsValid)
+
+
+            if (artikl != null && ModelState.IsValid)
             {
                 var kategorija = Service.GetCategory(artikl.ImeKategorije);
                 var model = new Artikl
@@ -98,18 +98,18 @@ namespace OnlineShopping.Controllers
             }
             return View("AddCategory");
         }
-        [HttpGet]
+        [HttpGet(Order = 1)]
         public IActionResult DeleteArticle()
         {
             var model = Service.GetArticles();
             return View(model.ToList());
         }
-        [HttpPost]
-        public IActionResult DeleteArticle(int ArtiklID)
+        [HttpGet("/Admin/DeleteArticle/{articleID}")]
+        public IActionResult DeleteArticle(int articleID)
         {
             if (ModelState.IsValid)
             {
-                Service.DeleteArticle(ArtiklID);
+                Service.DeleteArticle(articleID);
                 return RedirectToAction(nameof(Index));
             }
             return View();
@@ -165,7 +165,7 @@ namespace OnlineShopping.Controllers
             var artiklID = Service.GetArticleIDbyName(Pretraga);
             if (artiklID == 0)
             {
-                return Content("Ime artikla nije tacno");
+                return Content("Article doesn't exist");
             }
             var model = Service.GetSoldArticles(artiklID);
             return PartialView("PartialHistory", model);
@@ -214,15 +214,15 @@ namespace OnlineShopping.Controllers
             if (ModelState.IsValid)
             {
                 var sender = await userManager.GetUserAsync(User);
-                if (Email == sender.Email) return Content("Ne mozete sami sebi poslati poruku");
+                if (Email == sender.Email) return Content("Can't send message to yourself");
                 var reciever = Service.GetUser(Email);
                 if (reciever == null)
                 {
-                    return Content("Email nevalidan");
+                    return Content("Invalid Email");
                 }
                 if (!attachment.ContentType.Contains("image"))
                 {
-                    return Content("Nepoznat format slike");
+                    return Content("Unsupported file format");
                 }
                 Service.AddMessage(sender, reciever, subject, Message.Trim(), attachment);
                 return RedirectToAction(nameof(GetMessage));
@@ -317,9 +317,9 @@ namespace OnlineShopping.Controllers
                 picture.CopyTo(memStream);
                 Service.AddAdvertisement(model, memStream.ToArray());
                 var currUser = await userManager.GetUserAsync(User);
-                var drugiUser = await userManager.FindByNameAsync(model.UserName);
-                Service.AddMessage(currUser, drugiUser, "Obavjestenje o marketingu", "Uspjesno ste prijavili marketing", null);
-                return RedirectToAction(nameof(ManageAdvertisement));
+                var otherUser = await userManager.FindByNameAsync(model.UserName);
+                Service.AddMessage(currUser, otherUser, "Marketing update", "Successfully added advertisement", null);
+                return View(nameof(AddAdvertisementType));
             }
             return View(model);
 

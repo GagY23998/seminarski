@@ -131,7 +131,7 @@ using OnlineShopping.HelperUser;
             WriteLiteral(" KM</td>\r\n            <td>");
             EndContext();
             BeginContext(583, 69, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "cdd663267d434e898714bb8f4d776b87", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "62e2b664440d4692b44de1bf815a9b38", async() => {
                 BeginContext(643, 5, true);
                 WriteLiteral("Uredi");
                 EndContext();

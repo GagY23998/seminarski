@@ -13,12 +13,12 @@
     <table class="table table-bordered">
         <thead>
             <tr>
-                <td>Tip Oglasa</td>
-                <td>Opis</td>
-                <td>Datum kreiranja</td>
-                <td>Datum isteka</td>
-                <td>Klijent</td>
-                <td>Opcije</td>
+                <td>Advertisement Type</td>
+                <td>Description</td>
+                <td>Create Date</td>
+                <td>Expire Date</td>
+                <td>Client</td>
+                <td>Action</td>
             </tr>
         </thead>
         <tbody>
@@ -31,10 +31,10 @@
                 <td>@item.RegistrationDate.ToShortDateString()</td>
                 <td>@item.ExpirationDate.ToShortDateString()</td>
                 <td >@item.UserName</td>
-                <td><a asp-action="ChangeAdvertisement" asp-route-id="@service.GetAdvertisementByNameUser(item.TypeName, item.UserName, item.RegistrationDate.ToString()).AdvertisementId">Izmijeni</a></td>
-            
-                <td><a asp-action="DeleteAdvertisement" 
-                        asp-route-id="@service.GetAdvertisementByNameUser(item.TypeName, item.UserName, item.RegistrationDate.ToString()).AdvertisementId">Izbrisi</a></td>
+                <td><a asp-controller="Admin"asp-action="ChangeAdvertisement" asp-route-id="@service.GetAdvertisementByNameUser(item.TypeName, item.UserName, item.RegistrationDate.ToString()).AdvertisementId">Change</a></td>
+                      
+                <td><a asp-controller="Admin"asp-action="DeleteAdvertisement" 
+                        asp-route-id="@service.GetAdvertisementByNameUser(item.TypeName, item.UserName, item.RegistrationDate.ToString()).AdvertisementId">Delete</a></td>
             </tr>
         }
         </tbody>

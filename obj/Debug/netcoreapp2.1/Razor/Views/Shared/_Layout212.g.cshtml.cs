@@ -102,7 +102,7 @@ using Microsoft.AspNetCore.Http;
             WriteLiteral("<!DOCTYPE html>\r\n<html>\r\n");
             EndContext();
             BeginContext(606, 1407, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "55a0db2dfddf48579b1655124a1bfa96", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4ffe0d3ec38a42cfa2abeddf8ca112f9", async() => {
                 BeginContext(612, 100, true);
                 WriteLiteral("\r\n    <meta charset=\"utf-8\">\r\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\r\n    <title>");
                 EndContext();
@@ -156,7 +156,7 @@ using Microsoft.AspNetCore.Http;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(2015, 25141, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "429d12867a3c428f9b0eaf7f62976aa9", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4ed18bedeb9a42c78f79a06de853ad6e", async() => {
                 BeginContext(2068, 1090, true);
                 WriteLiteral(@"
     <div class=""wrapper"">
@@ -185,7 +185,7 @@ using Microsoft.AspNetCore.Http;
                 WriteLiteral(" <li class=\"dropdown messages-menu\">\r\n                            ");
                 EndContext();
                 BeginContext(3158, 563, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "47da781bf1104d4caef8c64a1d5d2110", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4a2b30dea2fa4b1bbc37e15520e66e04", async() => {
                     BeginContext(3255, 68, true);
                     WriteLiteral("\r\n                                <i class=\"fa fa-envelope-o\"></i>\r\n");
                     EndContext();
@@ -277,7 +277,7 @@ using Microsoft.AspNetCore.Http;
                 WriteLiteral("                                </li>\r\n                                <li class=\"footer\">");
                 EndContext();
                 BeginContext(5274, 49, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "28ed48c75d5f4283ac1aff405f919234", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1167d2227e28492c8f9cc86757fa7e38", async() => {
                     BeginContext(5311, 8, true);
                     WriteLiteral("View all");
                     EndContext();
@@ -457,7 +457,7 @@ using Microsoft.AspNetCore.Http;
                 WriteLiteral("\n                <!-- search form -->\r\n                ");
                 EndContext();
                 BeginContext(14594, 543, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1b329b98b9c945878c075bee7568f581", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ac9d2870e5d24d748868490afb21dd6b", async() => {
                     BeginContext(14645, 485, true);
                     WriteLiteral(@"
                     <div class=""input-group"">
@@ -691,7 +691,7 @@ using Microsoft.AspNetCore.Http;
                 WriteLiteral("  <!-- Settings tab content -->\r\n                <div class=\"tab-pane\" id=\"control-sidebar-settings-tab\">\r\n                    ");
                 EndContext();
                 BeginContext(22762, 2962, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c3292a4065884e84a40e66cb3345106a", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7f9a84af5cf744fea9c745e16e58d28f", async() => {
                     BeginContext(22782, 2935, true);
                     WriteLiteral(@"
                         <h3 class=""control-sidebar-heading"">General Settings</h3>
