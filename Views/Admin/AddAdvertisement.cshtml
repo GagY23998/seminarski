@@ -20,7 +20,7 @@
             <div class="form-group row mb-2">
                 <label style="text-align:left" class="col-form-label col-sm-offset-3 col-sm-2">Client:</label>
                 <div class="col-sm-4"><input class="form-control" type="text" asp-for="@Model.UserName" id="username" /></div>
-                <div class="users">
+                <div class="users form-group row col-sm-4 col-sm-offset-5">
                     <partial name="_UserName" model="@service.GetUsers()" />
                 </div>
                 <span class="text-danger" asp-validation-for="@Model.UserName"></span>
@@ -53,10 +53,13 @@
     </div>
 </div>
 <script>
-    $("#username").blur(function () {
+    $(function () {
 
-        $(".myuser").each((i, item) => {
-            console.log($(item));
+        $("#username").blur(function () {
+
+                console.log($(this).val());
+            $(".myuser").each((i, item) => {
+           
             if ($(item).find("p").first().html() == $(this).val()) {
                 $(item).show();
             } else {
@@ -68,6 +71,8 @@
     $(".emailClick").click(function () {
         $("#username").val($(this).html());
         $(".myuser").hide();
+    });
+
     });
 
 </script>

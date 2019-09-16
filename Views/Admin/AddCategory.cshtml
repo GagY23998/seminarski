@@ -15,8 +15,8 @@
             </div>
             <br/>
             <div class="form-group row col-sm-6 col-sm-offset-5">
-                <button class="btn btn-primary" type="button" id="oznaka">Dodaj Oznaku</button>
-                <input class="btn btn-warning" type="submit" value="Potvrdi" />
+                <button class="btn btn-primary" type="button" id="oznaka">Add new tag</button>
+                <input class="btn btn-warning" type="submit" value="Submit" />
             </div>
         </form>
     </div>
@@ -26,14 +26,14 @@
         let cnt = 0;        
         $("#oznaka").click(function(){
             $(".prioriteti").append(`
-                    <div class="form-group row col-sm-6 col-sm-offset-4">
+                    <div class="form-group col-sm-6 col-sm-pull-4">
                         <div class="form-group col-sm-4">
                             <label class="col-form-label">Oznaka ${cnt + 1}</label>
-                            <input class="form-control" type="text" name="charachteristics[${cnt}].CharName" placeholder="Dodaj novu oznaku"/>
+                            <input class="form-control" type="text" name="charachteristics[${cnt}].CharName" placeholder="Add new tag"/>
                         </div>                        
                         <div class="form-group col-sm-4">
                             <label class="col-form-label">Prioritet</label>
-                            <input class="form-control" type="number" name="charachteristics[${cnt++}].Priority placeholder="Dodaj priortet" />
+                            <input class="form-control" type="number" name="charachteristics[${cnt++}].Priority" placeholder="Add priority" />
                         </div>
                     </div>`);
         });

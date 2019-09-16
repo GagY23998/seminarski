@@ -318,8 +318,9 @@ namespace OnlineShopping.Controllers
                 Service.AddAdvertisement(model, memStream.ToArray());
                 var currUser = await userManager.GetUserAsync(User);
                 var otherUser = await userManager.FindByNameAsync(model.UserName);
+                if (currUser.Id == otherUser.Id) return RedirectToAction(nameof(AddAdvertisement));
                 Service.AddMessage(currUser, otherUser, "Marketing update", "Successfully added advertisement", null);
-                return View(nameof(AddAdvertisementType));
+                return View(nameof(ManageAdvertisement));
             }
             return View(model);
 
@@ -359,18 +360,19 @@ namespace OnlineShopping.Controllers
             }
                 var ad = Service.GetAdvertisementByNameUser(model.TypeName,model.UserName,model.RegistrationDate.ToString());
                 Service.ChangeExpirationDate(ad.AdvertisementId,model);
-                return View(nameof(ManageAdvertisement));
+                return RedirectToAction(nameof(ManageAdvertisement));
         }
         [HttpGet]
         public IActionResult AddAdvertisementType() => View();
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public IActionResult AddAdvertisementType(AdvertisementTypeViewModel model)
         {
             if (ModelState.IsValid)
             {
 
                 Service.AddAdvertisementType(model);
-                return RedirectToAction(nameof(ManageAdvertisement));
+                return RedirectToAction(nameof(AddAdvertisementType));
             }
             return RedirectToAction(nameof(Index));
         }

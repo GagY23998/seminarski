@@ -42,14 +42,14 @@
                             <li class="active">
                                 <a href="#">
                                     <i class="fa fa-inbox"></i> Inbox
-                                    <span class="label label-primary pull-right">12</span>
+                                    <span class="label label-primary pull-right">@service.GetMessages(access.HttpContext.Session.GetUser().Id).Count</span>
                                 </a>
                             </li>
                             <li><a href="#"><i class="fa fa-envelope-o"></i> Sent</a></li>
                             <li><a href="#"><i class="fa fa-file-text-o"></i> Drafts</a></li>
-                            <li>
+                            @*<li>
                                 <a href="#"><i class="fa fa-filter"></i> Junk <span class="label label-warning pull-right">65</span></a>
-                            </li>
+                            </li>*@
                             <li><a href="#"><i class="fa fa-trash-o"></i> Trash</a></li>
                         </ul>
                     </div>
@@ -241,10 +241,10 @@
                 method: "GET",
                 data: { name: $(this).val() },
                 success: function () {
-                    $("#target").val("Pronadjen");
+                    $("#target").val("Found");
                 },
                 error: function () {
-                    $("#target").val("Nepoznato");
+                    $("#target").val("Unknown");
                 }
 
             });

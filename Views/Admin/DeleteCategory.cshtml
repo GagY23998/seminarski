@@ -2,17 +2,18 @@
 @inject IArtikliService service
 <div class="box box-primary">
     <div class="box-body">
-        <form method="post" class="col-sm-offset-5">
+        <form method="post">
             <div class="form-group">
-                <select class="list-group-item" 
+                <select class="list-group-item col-sm-offset-5" 
                         id="CatChanging" 
                         asp-for="KategorijaID" 
                         asp-items="@{new SelectList(service.GetCategories(), "KategorijaID", "ImeKategorije", "Pick something")}"></select>
             </div>
+            <div class="catList col-sm-offset-3"></div>
             <div class="form-group">
-                <button type="submit" class="btn btn-primary">Potvrdi</button>
+                <button type="submit" class="btn btn-primary col-md-offset-5">Potvrdi</button>
+                <button type="button" id="resetButton" class="btn btn-info">Reset</button>
             </div>
-            <div class="catList"></div>
         </form>
     </div>
 </div>
@@ -24,15 +25,16 @@
             $.ajax({
                 url: "/Admin/GetCatList",
                 type: "GET",
-                data: { id: Number($("select").val()) },
+                data: { id: Number($("#CatChanging").val()) },
                 success: function (data) {
                     $(".catList").empty();
                     $(data).each((i, item) => {
+                        console.log(item);
                         $(".catList").append(`<div>
                         <div>
-                        <label>Ime prioriteta:</label>
+                        <label>Tag name:</label>
                         <input disabled value="${item["charName"]}"/>
-                        <label>Prioritet:</label>
+                        <label>Priority:</label>
                         <input disabled value="${item["priority"]}"/>
                         </div>
                     </div>`);
@@ -41,6 +43,9 @@
                 },
                 error: () => console.log("Error")
             });
+        });
+        $("#resetButton").click(function () {
+            $(".catList").empty();
         });
     });
 </script>

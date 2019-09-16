@@ -7,7 +7,7 @@ namespace OnlineShopping.ViewModels
 {
     public class AdvertisementTypeViewModel
     {
-        [Required(ErrorMessage ="Polje ne smije biti prazno")]
+        [Required(ErrorMessage ="Polje ne smije biti prazno",AllowEmptyStrings =false)]
         public string AdvertisementType { get; set; }
     }
 }

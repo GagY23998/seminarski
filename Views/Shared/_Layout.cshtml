@@ -74,14 +74,14 @@
                         <!-- Messages: style can be found in dropdown.less-->
                         <li class="dropdown messages-menu">
                             <!-- Menu toggle button -->
-                            <a asp-action="GetMessage" asp-controller="Admin" class="dropdown-toggle" data-toggle="dropdown">
-                                <i class="fa fa-envelope-o"></i>
+                            <a style="z-index:400" class="dropdown-toggle" asp-controller="Admin" asp-action="GetMessage" data-toggle="dropdown">
                                 @if (signInManager.IsSignedIn(User))
                                 {
                                     <span class="label label-success">
                                         @service.GetUnreadMessages(access.HttpContext.Session.GetUser().Id)
                                     </span>
                                 }
+                                <i class="fa fa-envelope-o"></i>
                             </a>
 
                         </li>
@@ -110,7 +110,7 @@
                                             <!-- end notification -->
                                         </ul>*@
                                 </li>
-                                <li class="footer"><a asp-action="NotificationArticles">View all</a></li>
+                                <li class="footer"><a asp-controller="Admin" asp-action="NotificationArticles">View all</a></li>
                             </ul>
                         </li>
                         <!-- Tasks Menu -->
@@ -226,11 +226,13 @@
         <!-- Main Footer -->
         <footer class="main-footer">
             <!-- To the right -->
+<!--
             <div class="pull-right hidden-xs">
                 Anything you want
             </div>
+-->    
             <!-- Default to the left -->
-            <strong>Copyright &copy; 2016 <a href="#">Company</a>.</strong> All rights reserved.
+            <strong>Copyright &copy; 2019 <a href="#">Online Shopping</a>.</strong> All rights reserved.
         </footer>
         <!-- Control Sidebar -->
         <aside class="control-sidebar control-sidebar-dark">
@@ -240,7 +242,7 @@
                 <li><a href="#control-sidebar-settings-tab" data-toggle="tab"><i class="fa fa-gears"></i></a></li>
             </ul>
             <!-- Tab panes -->
-            <div class="tab-content">
+            @*<div class="tab-content">
                 <!-- Home tab content -->
                 <div class="tab-pane active" id="control-sidebar-home-tab">
                     <h3 class="control-sidebar-heading">Recent Activity</h3>
@@ -295,7 +297,7 @@
                     </form>
                 </div>
                 <!-- /.tab-pane -->
-            </div>
+            </div>*@
         </aside>
         <!-- /.control-sidebar -->
         <!-- Add the sidebar's background. This div must be placed

@@ -230,13 +230,13 @@ namespace OnlineShopping.Services
         public Kategorija GetCategoryByID(int id)
         {
             var model = _context.Categories.FirstOrDefault(k => k.KategorijaID == id);
-            var charteristics = _context.CategoryCharachteristics.Where(ch => ch.KategorijaID == id).ToList();
-            model.OpisKategorije = charteristics;
+            var characteristics = _context.CategoryCharachteristics.Where(ch => ch.KategorijaID == id).ToList();
+            model.OpisKategorije = new List<CategoryCharachteristic>(characteristics);            
             return model;
         }
         public IEnumerable<AppUser> GetUsers()
         {
-            var model = _context.Users.OrderBy(u => u.FirstName).ToList();
+            var model = _context.Users.ToList();
             return model;
         }
 

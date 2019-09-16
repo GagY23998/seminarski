@@ -9,7 +9,11 @@
 @inject IHttpContextAccessor access
 @{ Layout = "~/Views/Shared/_Layout.cshtml";
     var unreadMessages = service.GetUnreadMessages(access.HttpContext.Session.GetUser().Id);
-    var imgSrc = string.Format("data:image/png;base64,{0}", Convert.ToBase64String(Model.Attachment));
+    string imgSrc = "";
+        if (Model.Attachment != null)
+        {
+        imgSrc = string.Format("data:image/png;base64,{0}", Convert.ToBase64String(Model.Attachment));
+        }
     }
 
 <div class="content-wrapper">
@@ -19,7 +23,7 @@
             Read Mail
         </h1>
         <ol class="breadcrumb">
-            <li><a asp-action="Index" asp-controller="Home"><i class="fa fa-dashboard"></i> Home</a></li>
+            <li><a asp-action="Index" asp-controller="Admin"><i class="fa fa-dashboard"></i> Home</a></li>
             <li class="active">Mailbox</li>
         </ol>
     </section>
@@ -40,7 +44,7 @@
                     <div class="box-body no-padding">
                         <ul class="nav nav-pills nav-stacked">
                             <li>
-                                <a asp-action="GetMessage">
+                                <a asp-controller="Admin" asp-action="GetMessage">
                                     <i class="fa fa-inbox"></i> Inbox
                                     <span class="label label-primary pull-right">@unreadMessages</span>
                                 </a>
@@ -117,7 +121,7 @@
                     <div class="box-footer">
                         <ul class="mailbox-attachments clearfix">
                             <div class="mailbox-attachment-info">
-                                <a asp-action="Download" asp-route-subject="@Model.Subject" asp-route-username="@Model.UserName" asp-route-date="@Model.CreationDate.ToString()" class="mailbox-attachment-name"><i class="fa fa-camera"></i>
+                                <a asp-controller="Admin" asp-action="Download" asp-route-subject="@Model.Subject" asp-route-username="@Model.UserName" asp-route-date="@Model.CreationDate.ToString()" class="mailbox-attachment-name"><i class="fa fa-camera"></i>
                                  Download</a>
                                 <span class="mailbox-attachment-size">
                                     1.9 MB
