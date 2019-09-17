@@ -134,7 +134,7 @@ using OnlineShopping.HelperUser;
             WriteLiteral("</td>\r\n                            <td>\r\n                            ");
             EndContext();
             BeginContext(1087, 100, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ff2c8b9f49b7404b954f67a801009488", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a5bd311892ae4b93913a2d962bda8428", async() => {
                 BeginContext(1177, 6, true);
                 WriteLiteral("Delete");
                 EndContext();

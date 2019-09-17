@@ -4,33 +4,33 @@
     
         <form method="post" enctype="multipart/form-data" role="form" style="padding:10px 0 10px 0">
             <div class="form-group">
-                <label class="col-form-label" asp-for="@Model.ImeArtikla">Ime Artikla:</label>
+                <label class="col-form-label" asp-for="@Model.ImeArtikla">Article Name:</label>
                 <div class="col-sm-4 col-sm-push-5">
                 <input class="form-control" type="text" name="ImeArtikla"/>
                     </div>
                 <span class="text-danger" asp-validation-for="@Model.ImeArtikla"></span>
             </div>
             <div class="form-group">
-                <label class="control-label" asp-for="NaStanju">Na stanju:</label>
+                <label class="control-label" asp-for="NaStanju">Article quantity:</label>
                <div class="col-sm-4 col-sm-push-5">
                 <input class="form-control" type="number" name="NaStanju"  />
                </div>
                 <span asp-validation-for="@Model.NaStanju"></span>
             </div>
             <div class="form-group">
-                <label class="control-label" asp-for="CijenaArtikla">Cijena:</label>
+                <label class="control-label" asp-for="CijenaArtikla">Article Price:</label>
                 <div class="col-sm-4 col-sm-push-5">
                 <input class="form-control" type="text" name="CijenaArtikla"  /></div>
                 <span class="text-danger" asp-validation-for="@Model.CijenaArtikla"></span>
             </div>
            
                 <div class="form-group">
-                    <label class="control-label" asp-for="ImeKategorije">Ime Kategorije:</label>
+                    <label class="control-label" asp-for="ImeKategorije">Category Name:</label>
                     <div class="col-sm-4 col-sm-push-5">
                         <select class="list-group-item" asp-for="ImeKategorije" asp-items="@{new SelectList(service.GetCategories(),"ImeKategorije","ImeKategorije","Izaberite kategoriju")}"></select>
                     </div>
                 <div class="col-sm-push-2 btn btn-default btn-file">
-                    <label class="control-label" asp-for="SlikaArtikla">Slika artikla:</label>
+                    <label class="control-label" asp-for="SlikaArtikla">Article Picture:</label>
                     <i class="fa fa-paperclip"></i>
                     <input class="" type="file" name="SlikaArtikla" required />
                 </div>

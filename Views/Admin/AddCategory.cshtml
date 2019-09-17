@@ -10,7 +10,7 @@
                 <span asp-validation-for="@Model.ImeKategorije"></span>
                 </div>
             </div>
-            <div class="prioriteti form-group">
+            <div class="prioriteti form-group row">
 
             </div>
             <br/>
@@ -26,8 +26,8 @@
         let cnt = 0;        
         $("#oznaka").click(function(){
             $(".prioriteti").append(`
-                    <div class="form-group col-sm-6 col-sm-pull-4">
-                        <div class="form-group col-sm-4">
+                    <div class="row">
+                        <div class="form-group col-sm-4 col-sm-offset-2">
                             <label class="col-form-label">Oznaka ${cnt + 1}</label>
                             <input class="form-control" type="text" name="charachteristics[${cnt}].CharName" placeholder="Add new tag"/>
                         </div>                        

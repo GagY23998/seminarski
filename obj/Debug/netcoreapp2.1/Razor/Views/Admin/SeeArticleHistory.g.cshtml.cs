@@ -74,7 +74,7 @@ using OnlineShopping.HelperUser;
             WriteLiteral("<script src=\"https://code.jquery.com/jquery-3.3.1.js\"\r\n        integrity=\"sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=\"\r\n        crossorigin=\"anonymous\"></script>\r\n");
             EndContext();
             BeginContext(304, 155, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1643170d7b814ae7ba4d49cf69084eab", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8974c33a2db348eea03976542c5440f7", async() => {
                 BeginContext(310, 142, true);
                 WriteLiteral("\r\n<nav>\r\n    <input type=\"search\" id=\"pretraga\" name=\"Pretraga\" placeholder=\"Pretrazi\" />\r\n</nav>\r\n<div class=\"PurchasedArticles\">\r\n\r\n</div>\r\n");
                 EndContext();

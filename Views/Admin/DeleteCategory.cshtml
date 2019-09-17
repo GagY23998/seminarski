@@ -10,6 +10,7 @@
                         asp-items="@{new SelectList(service.GetCategories(), "KategorijaID", "ImeKategorije", "Pick something")}"></select>
             </div>
             <div class="catList col-sm-offset-3"></div>
+            <br/>
             <div class="form-group">
                 <button type="submit" class="btn btn-primary col-md-offset-5">Potvrdi</button>
                 <button type="button" id="resetButton" class="btn btn-info">Reset</button>
@@ -31,11 +32,19 @@
                     $(data).each((i, item) => {
                         console.log(item);
                         $(".catList").append(`<div>
+                        <div class="row">
+                        <div class="col-sm-5">
+                        <label class="col-form-label col-sm-4">Tag name:</label>
+                        <div class="col-sm-4">
+                        <input class="form-control" disabled value="${item["charName"]}"/>
+                        </div>
+                        </div>
+                        <div class="col-sm-4">
+                        <label class="col-form-label col-sm-3">Priority:</label>
+                        <div class="col-sm-4">
+                        <input class="form-control col-sm-2" disabled value="${item["priority"]}"/>
+                        </div>      
                         <div>
-                        <label>Tag name:</label>
-                        <input disabled value="${item["charName"]}"/>
-                        <label>Priority:</label>
-                        <input disabled value="${item["priority"]}"/>
                         </div>
                     </div>`);
                     });

@@ -73,6 +73,8 @@ namespace OnlineShopping.Services
         public Kategorija DeleteCategory(int kategorijaID)
         {
             var kategorija = _context.Categories.FirstOrDefault(kat => kat.KategorijaID == kategorijaID);
+            var tags = _context.CategoryCharachteristics.Where(_ => _.KategorijaID == kategorija.KategorijaID);
+            _context.CategoryCharachteristics.RemoveRange(tags);
             _context.Remove(kategorija);
             _context.SaveChanges();
             return kategorija;
