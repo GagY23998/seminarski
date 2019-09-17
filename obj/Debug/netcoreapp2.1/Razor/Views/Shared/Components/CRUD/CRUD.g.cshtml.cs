@@ -78,7 +78,7 @@ using OnlineShopping.HelperUser;
             WriteLiteral("<li>");
             EndContext();
             BeginContext(4, 104, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "da56d017505445fc8e1b49e3f1799984", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "032167e28bb24f668f74816ef9522f74", async() => {
                 BeginContext(54, 50, true);
                 WriteLiteral("<i class=\"fa fa-link\"></i><span>Add Article</span>");
                 EndContext();
@@ -102,7 +102,7 @@ using OnlineShopping.HelperUser;
             WriteLiteral("</li>\r\n<li>");
             EndContext();
             BeginContext(119, 110, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "814e8c8bad3c4a48ba578cb3ec0de60b", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "967c25b2b034453ba372e0a22084f6bc", async() => {
                 BeginContext(172, 53, true);
                 WriteLiteral("<i class=\"fa fa-link\"></i><span>Delete Article</span>");
                 EndContext();
@@ -126,7 +126,7 @@ using OnlineShopping.HelperUser;
             WriteLiteral("</li>\r\n<li>");
             EndContext();
             BeginContext(240, 112, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "76e58f184f0b4fc88b00557537a160e0", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8410a34df7e640a5b1a43f5ef01129d2", async() => {
                 BeginContext(294, 54, true);
                 WriteLiteral("<i class=\"fa fa-link\"></i><span>Update Quantity</span>");
                 EndContext();
@@ -150,7 +150,7 @@ using OnlineShopping.HelperUser;
             WriteLiteral("</li>\r\n<li>");
             EndContext();
             BeginContext(363, 106, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "87481c963bdd425aa487f78a2d1ff30e", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "94f59a4cc3754c339f68cb911c6f3a5c", async() => {
                 BeginContext(414, 51, true);
                 WriteLiteral("<i class=\"fa fa-link\"></i><span>Add Category</span>");
                 EndContext();
@@ -174,7 +174,7 @@ using OnlineShopping.HelperUser;
             WriteLiteral("</li>\r\n<li>");
             EndContext();
             BeginContext(480, 112, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f880d0914c564ed5919d5b8105086d36", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e0325aa052754c0499680f1395f34176", async() => {
                 BeginContext(534, 54, true);
                 WriteLiteral("<i class=\"fa fa-link\"></i><span>Delete Category</span>");
                 EndContext();
@@ -198,7 +198,7 @@ using OnlineShopping.HelperUser;
             WriteLiteral("</li>\r\n<li>");
             EndContext();
             BeginContext(603, 122, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "afa637d0d3184ebcb7849c7d0f7756bb", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e989aecffabc446b80e04909e5056478", async() => {
                 BeginContext(660, 61, true);
                 WriteLiteral("<i class=\"fa fa-link\"></i><span>Article Buying History</span>");
                 EndContext();
@@ -222,7 +222,7 @@ using OnlineShopping.HelperUser;
             WriteLiteral("</li>\r\n<li>");
             EndContext();
             BeginContext(736, 125, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bde2ddfff27344d28a1bd8d276948bc2", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5b8706a978a8400b992be355f884592c", async() => {
                 BeginContext(796, 61, true);
                 WriteLiteral("<i class=\"fa fa-link\"></i><span>Add Advertisement Type</span>");
                 EndContext();
@@ -246,7 +246,7 @@ using OnlineShopping.HelperUser;
             WriteLiteral("</li>\r\n<li>");
             EndContext();
             BeginContext(872, 116, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4cc682a19b594774a4149949abe2f127", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "03241cacd201400fa94d25f9958c3310", async() => {
                 BeginContext(928, 56, true);
                 WriteLiteral("<i class=\"fa fa-link\"></i><span>Add Advertisement</span>");
                 EndContext();
@@ -270,7 +270,7 @@ using OnlineShopping.HelperUser;
             WriteLiteral("</li>\r\n<li>");
             EndContext();
             BeginContext(999, 122, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "835d182835af4511ba4a136375dc0808", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3291fc13baad48e4a29cbd5f57d84988", async() => {
                 BeginContext(1058, 59, true);
                 WriteLiteral("<i class=\"fa fa-link\"></i><span>Manage Advertisement</span>");
                 EndContext();

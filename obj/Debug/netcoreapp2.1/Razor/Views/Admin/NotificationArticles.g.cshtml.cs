@@ -120,7 +120,7 @@ using OnlineShopping.HelperUser;
             WriteLiteral(" KM</td>\r\n        <td class=\"text-center\">");
             EndContext();
             BeginContext(609, 131, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2928583658ab463caa2aa8536acf5bdd", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "362e5d111abb492c9379292e4fa25dda", async() => {
                 BeginContext(722, 14, true);
                 WriteLiteral("Change Article");
                 EndContext();

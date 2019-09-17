@@ -167,7 +167,7 @@ using OnlineShopping.HelperUser;
             WriteLiteral("</td>\r\n                <td>");
             EndContext();
             BeginContext(930, 199, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c64c38f66cc9474ebe663df10f87c204", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0c85616836e54eac9e7577ab77902afa", async() => {
                 BeginContext(1119, 6, true);
                 WriteLiteral("Change");
                 EndContext();
@@ -204,7 +204,7 @@ using OnlineShopping.HelperUser;
             WriteLiteral("\r\n                    |  \r\n                    ");
             EndContext();
             BeginContext(1176, 225, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9699ae0e1834426281a9c564b73e06ca", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "39ee9f9afe9b4657939c5fba29101d59", async() => {
                 BeginContext(1391, 6, true);
                 WriteLiteral("Delete");
                 EndContext();

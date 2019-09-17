@@ -14,27 +14,31 @@
                 <label style="text-align:left" class="col-sm-2 col-sm-offset-3 col-form-label">Tip Oglasa:</label>
                 <div class="col-sm-4">
                 <select class="list-group-item" asp-for="@Model.TypeName" asp-items="@{new SelectList(service.GetAdvertisementTypeModels(),"AdvertisementType","AdvertisementType")}"></select>
-                </div>
                 <span class="text-danger" asp-validation-for="@Model.TypeName"></span>
+                </div>
             </div>
             <div class="form-group row mb-2">
                 <label style="text-align:left" class="col-form-label col-sm-offset-3 col-sm-2">Client:</label>
-                <div class="col-sm-4"><input class="form-control" type="text" asp-for="@Model.UserName" id="username" /></div>
+                <div class="col-sm-4">
+                <input class="form-control" type="text" asp-for="@Model.UserName" id="username" />
+                <span class="text-danger" asp-validation-for="@Model.UserName"></span>
+                    </div>
                 <div class="users form-group row col-sm-4 col-sm-offset-5">
                     <partial name="_UserName" model="@service.GetUsers()" />
                 </div>
-                <span class="text-danger" asp-validation-for="@Model.UserName"></span>
             </div>
             <div class="form-group row">
                 <label style="text-align:left" class="col-form-label col-sm-offset-3 col-sm-2" >Description:</label>
-                <div class="col-sm-4"><input class="form-control" type="text" asp-for="@Model.Description" />
+                <div class="col-sm-4"><input class="form-control" type="text" asp-for="@Model.Description" required />
                 <span class="text-danger" asp-validation-for="@Model.Description"></span>
                 </div>
             </div>
             <div class="form-group row">
                 <label  style="text-align:left" class="col-sm-2 col-sm-offset-3 col-form-label" asp-for="@Model.ExpirationDate">Expiration Date:</label>
-                <div class="col-sm-4"><input class="form-control datepicker" asp-for="@Model.ExpirationDate" type="date" /></div>
+                <div class="col-sm-4">
+                <input class="form-control datepicker" asp-for="@Model.ExpirationDate" type="date" required />
                 <span class="text-danger" asp-validation-for="@Model.ExpirationDate"></span>
+                </div>
 
             </div>
             <div class="form-group row">

@@ -3,11 +3,11 @@
 
 <table>
     <tr>
-        <th>Ime Artikla</th>
-        <th>Ime Kupca</th>
-        <th>Email Kupca</th>
-        <th>Kolicina</th>
-        <th>Ukupna cijena</th>
+        <th>Article NameIme Artikla</th>
+        <th>Customer</th>
+        <th>Customer Email</th>
+        <th>Bought Quantity</th>
+        <th>Price</th>
     </tr>
     @foreach (var item in Model)
     {
@@ -20,7 +20,7 @@
             <td>@item.TotalPrice</td>
         </tr>
     }
-    <tr><th>Ukupno:</th><td>@ukupno</td></tr>
+    <tr><th>Total:</th><td>@ukupno</td></tr>
 </table>
 
 

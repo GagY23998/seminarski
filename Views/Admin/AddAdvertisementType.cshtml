@@ -26,11 +26,11 @@
     </div>
 </div>
 <form method="post">
-
+    <div asp-validation-summary="ModelOnly"><span>Correct the following errors</span></div>
     <div class="box-body">
         <label class="control-label col-sm-4 col-sm-push-2" asp-for="@Model.AdvertisementType" >Advertisement type: </label>
         <div class="form-group col-sm-5">
-            <input class="form-control col-sm-2 " type="text" asp-for="@Model.AdvertisementType" />
+            <input class="form-control col-sm-2 " type="text" asp-for="@Model.AdvertisementType"  required/>
             <span asp-validation-for="@Model.AdvertisementType"></span>
         </div>
         <button class="btn btn-primary" type="submit">Submit</button>

@@ -374,7 +374,7 @@ namespace OnlineShopping.Controllers
                 Service.AddAdvertisementType(model);
                 return RedirectToAction(nameof(AddAdvertisementType));
             }
-            return RedirectToAction(nameof(Index));
+            return Redirect("~/");
         }
         [HttpGet]
         public IActionResult DeleteAdvertisementType(string name) {

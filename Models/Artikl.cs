@@ -11,8 +11,12 @@ namespace OnlineShopping.Models
        
         [Key]
         public int ArtiklID { get; set; }
+        [Required]
+        [MinLength(4)]
         public string ImeArtikla { get; set; }
+        [Required]
         public decimal CijenaArtikla { get; set; }
+        [Required]
         public int NaStanju { get; set; }
         public DateTime VrijemePostavlanja { get; set; }
         public byte[] SlikaArtikla { get; set; }

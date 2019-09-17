@@ -103,7 +103,7 @@ using Microsoft.AspNetCore.Http;
             WriteLiteral("\r\n<div class=\"content-wrapper\">\r\n    <!-- Content Header (Page header) -->\r\n    <section class=\"content-header\">\r\n        <h1>\r\n            Read Mail\r\n        </h1>\r\n        <ol class=\"breadcrumb\">\r\n            <li>");
             EndContext();
             BeginContext(863, 85, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "699e2744b06648adaf7924d3909cf2ad", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3f9858f58b7542d2929baed4051f4fb9", async() => {
                 BeginContext(908, 36, true);
                 WriteLiteral("<i class=\"fa fa-dashboard\"></i> Home");
                 EndContext();
@@ -127,7 +127,7 @@ using Microsoft.AspNetCore.Http;
             WriteLiteral("</li>\r\n            <li class=\"active\">Mailbox</li>\r\n        </ol>\r\n    </section>\r\n    <!-- Main content -->\r\n    <section class=\"content\">\r\n        <div class=\"row\">\r\n            <div class=\"col-md-3\">\r\n                ");
             EndContext();
             BeginContext(1168, 87, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "df62c46719e44ca086cdfffc7d058cc8", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3254d75a86432c8221a283e2b6a522", async() => {
                 BeginContext(1244, 7, true);
                 WriteLiteral("Compose");
                 EndContext();
@@ -163,7 +163,7 @@ using Microsoft.AspNetCore.Http;
                                 ");
             EndContext();
             BeginContext(1914, 264, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f7fad59f33354d118e3acab0e4512fc5", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8f42e4cb084e47b7a0f0b2c454918bbe", async() => {
                 BeginContext(1964, 154, true);
                 WriteLiteral("\r\n                                    <i class=\"fa fa-inbox\"></i> Inbox\r\n                                    <span class=\"label label-primary pull-right\">");
                 EndContext();
@@ -287,7 +287,7 @@ using Microsoft.AspNetCore.Http;
                                 ");
             EndContext();
             BeginContext(5056, 244, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("button", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e15cb87412144b2882f524947ed823c2", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("button", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a210baddbdea4974abdc47c0d1272bd3", async() => {
                 BeginContext(5192, 99, true);
                 WriteLiteral("\r\n                                    <i class=\"fa fa-reply\"></i>\r\n                                ");
                 EndContext();
@@ -344,7 +344,7 @@ using Microsoft.AspNetCore.Http;
                                 ");
             EndContext();
             BeginContext(6421, 275, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1a2afe7fc10a49c5bbeacdec5caedf4d", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9e7cf8e086924fe9ab79f156d19e0169", async() => {
                 BeginContext(6621, 71, true);
                 WriteLiteral("<i class=\"fa fa-camera\"></i>\r\n                                 Download");
                 EndContext();

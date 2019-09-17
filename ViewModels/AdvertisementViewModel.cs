@@ -8,11 +8,11 @@ namespace OnlineShopping.ViewModels
     public class AdvertisementViewModel
     {
         public DateTime RegistrationDate { get; set; }
-        [Required(ErrorMessage ="Datum ne smije biti prazan")]
-        [DataType(DataType.DateTime,ErrorMessage ="Unesite ispravan datum")]
+        [Required(ErrorMessage ="Incorrect Date")]
+        [DataType(DataType.DateTime,ErrorMessage ="Enter valid date")]
         public DateTime ExpirationDate { get; set; }
         public byte[] Image { get; set; }
-        [Required(ErrorMessage = "Polje ne smije biti prazno")]
+        [Required(ErrorMessage = "Field can't be empty")]
         public string UserName { get; set; }
         [Required]
         public string Description { get; set; }

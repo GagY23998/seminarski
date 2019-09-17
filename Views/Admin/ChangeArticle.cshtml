@@ -4,27 +4,35 @@
 <div class="box box-primary">
     <form method="post" enctype="multipart/form-data" style="padding:10px 0 20px 0">
         <input type="hidden" name="ArtiklID" asp-for="@Model.ArtiklID" value="@Model.ArtiklID"/>
-        <div class="form-group">
+        <div class="form-group row">
             <label class="col-form-label">Article Name: </label>
             <div class="col-sm-4 col-sm-push-5">
-            <input class="col-sm-4 form-control" type="text" name="ImeArtikla" value="@Model.ImeArtikla" /></div></div>
-        <div class="form-group">
+            <input class="col-sm-4 form-control" type="text" name="ImeArtikla" value="@Model.ImeArtikla" required/>
+            <span class="text-danger" asp-validation-for="@Model.ImeArtikla"></span>
+                </div>
+        </div>
+        <div class="form-group row">
             <label class="col-form-label">Article state: </label>
             <div class="col-sm-4 col-sm-push-5">
-            <input class="col-sm-4 form-control" type="text" name="NaStanju" asp-for="@Model.NaStanju" value="@Model.NaStanju" /></div>
-        </div>
-        <div class="form-group">
-            <label class="col-form-label">Price: </label>
-            <div class="col-sm-4 col-sm-push-5">
-            <input class="col-sm-4 form-control" name="CijenaArtikla" asp-for="@Model.CijenaArtikla" value="@Model.CijenaArtikla" /></div>
-        </div>
-        <div class="form-group">
-            <label class="col-form-label">Category Name:</label>
-            <div class="col-sm-4 col-sm-push-5">
-            <input class="col-sm-4 form-control" type="text" name="ImeKategorije" value="@Service.GetCategoryByID(Model.KategorijaID).ImeKategorije" />
+            <input class="col-sm-4 form-control" type="text" name="NaStanju" asp-for="@Model.NaStanju" value="@Model.NaStanju" required />
+            <span class="text-danger" asp-validation-for="@Model.NaStanju"></span>
             </div>
         </div>
-        <div class="form-group">
+        <div class="form-group row">
+            <label class="col-form-label">Price: </label>
+            <div class="col-sm-4 col-sm-push-5">
+            <input class="col-sm-4 form-control" name="CijenaArtikla" asp-for="@Model.CijenaArtikla" value="@Model.CijenaArtikla" required />
+            <span class="text-danger" asp-validation-for="@Model.CijenaArtikla"></span>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-form-label">Category Name:</label>
+            <div class="col-sm-4 col-sm-push-5">
+            <input class="col-sm-4 form-control" type="text" 
+                   name="ImeKategorije" value="@Service.GetCategoryByID(Model.KategorijaID).ImeKategorije" required />
+            </div>
+        </div>
+        <div class="form-group row">
                 <label class="col-form-label">Article Picture:</label>
             
                 <div class="col-sm-4 col-sm-push-5">
@@ -32,13 +40,14 @@
                         <i class="fa fa-paperclip"></i>
                         <input type="file" name="slika" value="@Model.SlikaArtikla" />
                     </div>
-                </div>        </div>        
+                </div>        
+        </div>        
         <input type="hidden" name="SlikaArtikla" asp-for="@Model.SlikaArtikla" value="@System.Text.Encoding.UTF32.GetString(Model.SlikaArtikla)"/>
         <input type="hidden" name="KategorijaID" value="@Model.KategorijaID"/>
         <br />
         <div class="form-group">
             <div class="col-sm-4 col-sm-push-6">
-                <button class="btn btn-primary" type="submit">Potvrdi izmjenu</button>
+                <button class="btn btn-primary" type="submit">Apply Changes</button>
             </div>
         </div>
     </form>
