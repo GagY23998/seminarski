@@ -1,5 +1,4 @@
-﻿<!DOCTYPE html>
-@using Microsoft.AspNetCore.Identity;
+﻿@using Microsoft.AspNetCore.Identity;
 @using Microsoft.AspNetCore.Http;
 @using OnlineShopping.HelperUser;
 @inject IArtikliService service
@@ -16,31 +15,50 @@
         image = string.Format("data:image/png;base64,{0}", Convert.ToBase64String(user.Picture));
     }
 }
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>@ViewBag.Title</title>
     <!-- Tell the browser to be responsive to screen width -->
-    <script src="https://code.jquery.com/jquery-3.4.1.js"
-            integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-            crossorigin="anonymous"></script>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/jquery-validate/jquery.validate.js"></script>
+    <script src="~/lib/bootstrap/dist/css/bootstrap.css"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+
+    <script src="~/lib/Chart.js/Chart.bundle.min.js" asp-append-version="true"></script>
     <script src="~/lib/jquery-validate/jquery.validate.js"></script>
     <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+
+    <script src="~/lib/jquery-sparklines/jquery.sparkline.min.js" asp-append-version="true"></script>
+    <!-- jvectorm~/ap  -->
+    <script src="~/lib/jvectormap/jquery-jvectormap.min.js" asp-append-version="true"></script>
+    <script src="~/AdminLTE-master/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
+    <script src="~/AdminLTE-master/plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+    <!-- SlimScroll -->
+    <script src="~/AdminLTE-master/bower-components/jquery-slimscroll/jquery.slimscroll.min.js" asp-append-version="true"></script>
+    <script src="~/lib/fastclick/fastclick.min.js" asp-append-version="true"></script>
+    <script src="~/AdminLTE-master/dist/js/adminlte.min.js"></script>
+
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.7 -->
-    <link rel="stylesheet" href="~/AdminLTE-master/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/AdminLTE-master/bower-components/bootstrap/dist/css/bootstrap.css">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="~/AdminLTE-master/bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="~/AdminLTE-master/bower-components/font-awesome/css/font-awesome.css">
     <!-- Ionicons -->
     <link rel="stylesheet" href="~/AdminLTE-master/bower_components/Ionicons/css/ionicons.min.css">
     <!-- jvectormap -->
+    <!--
+
     <link rel="stylesheet" href="~/AdminLTE-master/bower_components/jvectormap/jquery-jvectormap.css">
+    -->
+    <link rel="stylesheet" href="~/lib/jvectormap/jquery-jvectormap.min.css" />
     <!-- Theme style -->
-    <link rel="stylesheet" href="~/AdminLTE-master/dist/css/AdminLTE.min.css">
+    <link rel="stylesheet" href="~/AdminLTE-master/dist/css/AdminLTE.css">
     <!-- AdminLTE Skins. Choose a skin from the css/skins
          folder instead of downloading all of them to reduce the load. -->
-    <link rel="stylesheet" href="~/AdminLTE-master/dist/css/skins/_all-skins.min.css">
+    <link rel="stylesheet" href="~/AdminLTE-master/dist/css/skins/_all-skins.css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -160,17 +178,18 @@
                 <!-- Sidebar user panel (optional) -->
                 <div class="user-panel">
                     <div class="pull-left image">
-                        <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                        <img src="@image" class="img-circle" alt="User Image">
                     </div>
                     <div class="pull-left info">
                         @if (signInManager.IsSignedIn(User))
                         {<p>@access.HttpContext.Session.GetUser().FirstName @access.HttpContext.Session.GetUser().LastName</p>}
-                        <!-- Status -->
+                        <!-- Status 
                         <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+                            -->
                     </div>
                 </div>
                 <!-- search form (Optional) -->
-                <form action="#" method="get" class="sidebar-form">
+                <!--<form action="#" method="get" class="sidebar-form">
                     <div class="input-group">
                         <input type="text" name="q" class="form-control" placeholder="Search...">
                         <span class="input-group-btn">
@@ -179,7 +198,7 @@
                             </button>
                         </span>
                     </div>
-                </form>
+                </form>-->
                 <!-- /.search form -->
                 <!-- Sidebar Menu -->
                 <ul class="sidebar-menu" data-widget="tree">
@@ -312,31 +331,36 @@
     <script src="https://code.jquery.com/jquery-3.4.1.js"
             integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
             crossorigin="anonymous"></script>
+  <!--
+      
     <script src="~/AdminLTE-master/bower_components/jquery/dist/jquery.js"></script>
+  -->
 
     <!-- Bootstrap 3.3.7 -->
-    <script src="~/AdminLTE-master/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <!--  <script src="~/AdminLTE-master/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>-->
     <!-- FastClic~/k -->
-    <script src="~/AdminLTE-master/bower_components/fastclick/lib/fastclick.js"></script>
+ <!--  <script src="~/AdminLTE-master/bower-components/fastclick/lib/fastclick.js" asp-append-version="true"></script>-->
+    
     <!-- AdminLTE~/ App -->
-    <script src="~/AdminLTE-master/dist/js/adminlte.min.js"></script>
     <!-- Sparklin~/e -->
-    <script src="~/AdminLTE-master/bower_components/jquery-sparkline/dist/jquery.sparkline.min.js"></script>
-    <!-- jvectorm~/ap  -->
-    <script src="~/AdminLTE-master/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
-    <script src="~/AdminLTE-master/plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
-    <!-- SlimScroll -->
-    <script src="~/AdminLTE-master/bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
-    <!-- ChartJS ~/-->
-    <script src="~/AdminLTE-master/bower_components/chart.js/Chart.js"></script>
-    <script src="~/lib/jquery-validate/jquery.validate.js"></script>
-    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
-    <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-    <!--
-     <script src="~/AdminLTE-master/dist/js/pages/dashboard2.js"></script>
+  <!--
+    <script src="~/AdminLTE-master/bower-components/jquery-sparkline/dist/jquery.sparkline.min.js" asp-append-version="true"></script>
     -->
+   
+    <!-- ChartJS ~/-->
+  <!--
+      
+    <script src="~/AdminLTE-master/bower_components/chart.js/Chart.min.js" asp-append-version="true"></script>
+  -->
+   
+    <!-- AdminLTE dashboard demo (This is only for demo purposes) 
+     <script src="~/AdminLTE-master/dist/js/pages/dashboard2.js"></script>
+        <script src="~/AdminLTE-master/dist/js/demo.js"></script>
+        
+        -->
+    
+    
     <!-- AdminLTE~/ for demo purposes -->
-    <script src="~/AdminLTE-master/dist/js/demo.js"></script>
     <script>
         $(function () {
             $("#picEvent").click(function () {

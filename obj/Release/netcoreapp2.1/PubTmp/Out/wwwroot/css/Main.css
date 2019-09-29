@@ -1,0 +1,32 @@
+﻿body>div{
+    margin:0;
+    padding:0;
+    background-color: brown;
+    height:800px;
+    width:1350px;
+    display:flex;
+    flex-wrap:wrap;
+    align-items:flex-start;
+}
+main{
+    height:500px;
+    width:70%;
+    background-color: burlywood;
+}
+aside{
+    background-color:red;
+    height:500px;
+    width:30%;
+    float:right;
+}
+header{
+    height:150px;
+    width:100%;
+    background-color:darkgreen;
+}
+footer{
+    height:50px;
+    width:100%;
+    align-self:flex-end;
+    background-color: fuchsia;
+}

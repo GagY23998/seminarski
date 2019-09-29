@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Asus-i5\\Desktop\\RS1_Seminarski git\\OnlineShop\\OnlineShopping.csproj": {}
+    "C:\\Users\\Asus-i5\\Desktop\\Jebem ti fakultet\\OnlineShop\\OnlineShopping.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Asus-i5\\Desktop\\RS1_Seminarski git\\OnlineShop\\OnlineShopping.csproj": {
+    "C:\\Users\\Asus-i5\\Desktop\\Jebem ti fakultet\\OnlineShop\\OnlineShopping.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Asus-i5\\Desktop\\RS1_Seminarski git\\OnlineShop\\OnlineShopping.csproj",
+        "projectUniqueName": "C:\\Users\\Asus-i5\\Desktop\\Jebem ti fakultet\\OnlineShop\\OnlineShopping.csproj",
         "projectName": "OnlineShopping",
-        "projectPath": "C:\\Users\\Asus-i5\\Desktop\\RS1_Seminarski git\\OnlineShop\\OnlineShopping.csproj",
+        "projectPath": "C:\\Users\\Asus-i5\\Desktop\\Jebem ti fakultet\\OnlineShop\\OnlineShopping.csproj",
         "packagesPath": "C:\\Users\\Asus-i5\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Asus-i5\\Desktop\\RS1_Seminarski git\\OnlineShop\\obj\\",
+        "outputPath": "C:\\Users\\Asus-i5\\Desktop\\Jebem ti fakultet\\OnlineShop\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\ProgramData\\Xamarin\\NuGet\\",
@@ -43,11 +43,19 @@
       "frameworks": {
         "netcoreapp2.1": {
           "dependencies": {
+            "Microsoft.ApplicationInsights.AspNetCore": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
             "Microsoft.AspNetCore.App": {
               "suppressParent": "All",
               "target": "Package",
               "version": "[2.1.1, )",
               "autoReferenced": true
+            },
+            "Microsoft.AspNetCore.Mvc.Razor.ViewCompilation": {
+              "target": "Package",
+              "version": "[2.1.1, )"
             },
             "Microsoft.AspNetCore.Razor.Design": {
               "suppressParent": "All",

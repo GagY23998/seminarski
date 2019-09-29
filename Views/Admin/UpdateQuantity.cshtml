@@ -3,7 +3,7 @@
 @inject OnlineShopping.Services.IArtikliService service
 <div class="KolicinaAzuriraj text-center">
     <form>
-        <select style="padding-bottom:10px" class="col-sm-push-5 list-group-item" id="kategorijaChange" asp-items="@{new SelectList(service.GetCategories(),"KategorijaID","ImeKategorije","Nesto")}"></select>
+        <select style="padding-bottom:10px" class="col-sm-push-5 list-group-item" id="kategorijaChange" asp-items="@(new SelectList(service.GetCategories(),"KategorijaID","ImeKategorije","Nesto"))"></select>
         <div class="text-center>
 
             <tbody id="tabelaArtikala text-center">

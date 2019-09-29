@@ -69,6 +69,9 @@ namespace OnlineShopping.Controllers
             {
                 var user = await userManager.GetUserAsync(User);
                 HttpContext.Session.SetUser(user);
+                var roles = await userManager.GetRolesAsync(user);
+                roles = roles.ToList();
+                if (!roles.Any(_ => _ == "Admin")) return RedirectToAction("Index", "Home");
                 return RedirectToAction("Index", "Admin");
             }
             return Content("Something went wrong");
@@ -86,7 +89,7 @@ namespace OnlineShopping.Controllers
                 await signInManager.SignOutAsync();
                 HttpContext.Session.Clear();
             }
-            return RedirectToAction("Index","Admin");
+            return RedirectToAction("Index","Home");
         }
     }
 }

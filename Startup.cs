@@ -56,6 +56,7 @@ namespace OnlineShopping
             services.AddScoped<IArtikliService, ArtikliService>();
             services.AddSingleton<Artikl>();
             services.AddHttpContextAccessor();
+            services.AddApplicationInsightsTelemetry();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
 

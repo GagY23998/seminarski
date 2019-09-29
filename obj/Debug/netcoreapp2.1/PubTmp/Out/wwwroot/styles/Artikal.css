@@ -1,0 +1,35 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Archivo');
+@font-face {
+    font-family: "MyFont";
+    src: url('https://fonts.googleapis.com/css?family=Archivo') format('truetype')
+}
+.Artikal{
+    color:White;
+    background-color:crimson;
+    border:1px solid rgba(61, 5, 83, 0.78);
+    text-align:center;
+}
+.Artikal p{
+    font-family: MyFont;
+}
+.men-pro-item {
+    position: relative;
+}
+
+.men-thumb-item:hover {
+    cursor: pointer;
+}
+
+    .men-thumb-item:hover::before {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .men-thumb-item:hover .men-cart-pro {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .men-thumb-item:hover .inner-men-cart-pro ul {
+        margin: 20px 0 0;
+    }
